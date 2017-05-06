@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewPagerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="10dp"
+        android:clipChildren="false" />
+
+    <RadioGroup
+        android:id="@+id/rgSGUH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewpager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/sgu_top_rb1"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/sleckt_main"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/sgu_top_rb2"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sleckt_main"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/sgu_top_rb3"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sleckt_main"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/sgu_top_rb4"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sleckt_main"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/sgu_top_rb5"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sleckt_main"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/sgu_top_rb6"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sleckt_main"
+            android:button="@null" />
+    </RadioGroup>
+
+</RelativeLayout>

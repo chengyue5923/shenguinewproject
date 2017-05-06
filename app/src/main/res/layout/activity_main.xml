@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/transparence">-->
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--android:paddingBottom="50dp"-->
+
+    </FrameLayout>
+    <!--android:layout_alignParentBottom="true"-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/personaltailorline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/startLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/im_featured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/first_unselect_image" />
+
+                <TextView
+                    android:id="@+id/tv_featured"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/guimiLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/im_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/guimi_unselect_img" />
+
+                <TextView
+                    android:id="@+id/tv_service"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="龟蜜"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/findLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/im_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/icon_service_normal"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/im_find"
+                    android:layout_toRightOf="@+id/im_find"
+                    android:gravity="center"
+                    android:text="发现"
+                    android:textSize="17sp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mineLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/im_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/mine_unselect_image" />
+
+                <ImageView
+                    android:id="@+id/noticeIm"
+                    android:layout_width="@dimen/sixDp"
+                    android:layout_height="@dimen/sixDp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/im_mine"
+                    android:background="@drawable/activity_notice_ciecle_bg"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_mine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="我的"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/main_tab_layout"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/tab_backgroud">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/main_tab_selected_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tab_menu_selected_text_CN"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:text="@string/bottom_menu_selected"-->
+    <!--android:textColor="@drawable/tab_selector_text"-->
+    <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tab_menu_selected_EN"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/tab_menu_selected_text_CN"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center_horizontal"-->
+
+    <!--android:text="@string/bottom_menu_selected_EN"-->
+    <!--android:textColor="@drawable/tab_selector_text"-->
+    <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--</FrameLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/tab_menu_service_iv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/tab_selector_supply" />-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/main_tab_wealth_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:gravity="center"-->
+
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tab_menu_wealth_text_CN"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:text="@string/bottom_menu_wealth"-->
+    <!--android:textColor="@drawable/tab_selector_text"-->
+    <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tab_menu_wealth_text_EN"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="@string/bottom_menu_wealth_EN"-->
+    <!--android:textColor="@drawable/tab_selector_text"-->
+    <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_transition"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/loadinganim_bg"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+
+    <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

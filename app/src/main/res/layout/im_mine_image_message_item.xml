@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shengui.app.android.shengui.android.ui.activity.activity.im.ImageRenderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/chat_back"
+    android:paddingBottom="20dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chat_avatar_male" />
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignTop="@id/user_portrait"
+
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/user_portrait">
+
+            <LinearLayout
+                android:id="@+id/message_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tt_my_message_bkgnd">
+
+                <com.shengui.app.android.shengui.android.ui.activity.activity.im.BubbleImageView
+                    android:id="@+id/message_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="150dp"
+                    android:maxWidth="150dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="centerCrop" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/message_state_failed"
+            android:layout_width="18dp"
+
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/content_layout"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/message_image_desc"
+            android:src="@drawable/tt_msg_tip"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/content_layout"
+            android:layout_toStartOf="@id/content_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</com.shengui.app.android.shengui.android.ui.activity.activity.im.ImageRenderView>

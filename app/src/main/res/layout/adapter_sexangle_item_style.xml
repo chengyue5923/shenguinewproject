@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    >
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/adapter_text"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/shenguiappcolor"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_height="32dp" />
+
+</FrameLayout>

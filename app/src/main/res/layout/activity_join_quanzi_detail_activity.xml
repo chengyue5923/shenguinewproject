@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:id="@+id/backImageview"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/tenDp"
+            android:background="@drawable/back_detault_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:id="@+id/myTabLayout"
+            android:orientation="horizontal"
+            android:layout_width="92dp"
+            android:layout_height="44dp">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/hotlayout"
+                    android:text="资料"
+                    android:textSize="15sp"
+                    android:textColor="@color/shenguiappcolor"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/hotlineView"
+                    android:background="@color/shenguiappcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_width="1dp"
+                android:background="#f2f0f1"
+                android:layout_height="15dp"/>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="成员"
+                    android:textSize="15sp"
+                    android:textColor="@color/titlecolor"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/originzationLayout" />
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/origiazationlineView"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/line"
+        android:id="@+id/my_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

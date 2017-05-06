@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personOnelayout"
+    android:layout_width="60dp"
+    android:layout_marginRight="@dimen/twelvetyDp"
+    android:layout_height="wrap_content">
+<com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+android:id="@+id/personInfoIvItemd"
+android:layout_width="40dp"
+android:layout_centerInParent="true"
+android:layout_marginRight="@dimen/twelvetyDp"
+android:src="@drawable/default_pictures"
+android:layout_height="40dp"
+android:layout_gravity="center_vertical"
+/>
+<TextView
+    android:visibility="gone"
+    android:id="@+id/textview"
+android:layout_marginLeft="5dp"
+android:textColor="#333333"
+android:textSize="11sp"
+    android:gravity="center_vertical"
+android:layout_toRightOf="@id/personInfoIvItemd"
+android:text="上海龟圈"
+android:layout_width="wrap_content"
+android:layout_height="40dp" />
+</RelativeLayout>

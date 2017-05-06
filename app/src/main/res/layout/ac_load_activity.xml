@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+    <com.shengui.app.android.shengui.android.ui.utilsview.ImagePagerView
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" />
+    <TextView
+        android:background="@drawable/skip_image"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/twentyDp"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:layout_alignParentRight="true"
+        android:text="跳过"
+        android:gravity="center"
+        android:id="@+id/skipTv"
+        android:textColor="@color/shenguiappcolor"
+        android:textSize="15sp"
+        android:layout_width="70dp"
+        android:layout_height="30dp" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_login"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/activity_quanzi_office"
+        android:text="立即体验"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</RelativeLayout>

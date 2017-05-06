@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/nameTv"
+            android:text="张三丰"
+            android:paddingLeft="@dimen/tenDp"
+            android:textColor="#333333"
+            android:background="@drawable/lay_my_bt"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+</LinearLayout>

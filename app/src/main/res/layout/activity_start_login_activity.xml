@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+    <TextView
+        android:id="@+id/skipTv"
+        android:layout_alignParentRight="true"
+        android:text="跳过"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:layout_marginRight="@dimen/tenDp"
+        android:gravity="center_vertical|right"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp" />
+    <LinearLayout
+
+        android:id="@+id/loginLaout"
+        android:orientation="vertical"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/smart"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:text="其他方式快速登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+   <RelativeLayout
+       android:layout_marginTop="15dp"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:id="@+id/weixinLayout"
+           android:gravity="center"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/weixinImage"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/weixin_iamge"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:text="微信"
+               android:gravity="center"
+               android:textColor="#07af12"
+               android:textSize="10sp"
+               android:layout_below="@id/weixinImage"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_marginLeft="45dp"
+           android:layout_toRightOf="@id/weixinLayout"
+           android:id="@+id/QQLayout"
+           android:gravity="center"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/qqImage"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/qq_iamge"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:text="微信"
+               android:gravity="center"
+               android:textColor="#19b6ff"
+               android:textSize="10sp"
+               android:layout_below="@id/qqImage"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+   </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/confrmTv"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginLaout"
+        android:gravity="center"
+        android:textColor="@color/shenguiappcolor"
+        android:textSize="15sp"
+        android:text="注册"
+        android:background="@drawable/activity_plate_divided_select_item"
+        android:layout_width="250dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:id="@+id/loginTv"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/confrmTv"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="登录"
+        android:background="@drawable/activity_quanzi_confirm"
+        android:layout_width="250dp"
+        android:layout_height="35dp" />
+</RelativeLayout>

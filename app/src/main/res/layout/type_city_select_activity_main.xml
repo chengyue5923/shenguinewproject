@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="城市选择"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/sureTextView"
+                android:layout_alignParentRight="true"
+                android:text="取消"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:textColor="#2e2e2e"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:text="取消"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:textColor="#2e2e2e"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/isroot"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center_vertical"
+            android:textColor="@color/titlecolor"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#e0e0e0"
+            android:paddingLeft="@dimen/tenDp"
+            android:layout_toRightOf="@id/iv_lv_item_head"
+            android:text="热门城市"/>
+         <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/hottypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        <View
+            android:background="#e7e7e7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_gravity="center"
+                android:background="@drawable/activity_detail_phone_bg"
+                android:layout_centerInParent="true"
+
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+
+            <com.shengui.app.android.shengui.android.ui.utilsview.sortlistview.SideBar
+                android:id="@+id/sidebar"
+                android:layout_width="20dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

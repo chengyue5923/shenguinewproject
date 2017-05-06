@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+   <TextView
+       android:id="@+id/collectionText"
+       android:background="@color/white"
+       android:textColor="#333333"
+       android:textSize="14sp"
+       android:text="广告信息"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:layout_width="match_parent"
+       android:layout_height="35dp" />
+    <View
+        android:background="@color/bottomlineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+    <TextView
+        android:id="@+id/sharwTextView"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="辱骂他人"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <View
+        android:background="@color/bottomlineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+    <TextView
+        android:id="@+id/jubaoText"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="违规信息"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tenDp"/>
+    <TextView
+        android:id="@+id/cancelTextView"
+        android:layout_marginBottom="@dimen/tenDp"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="取消"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+</LinearLayout>

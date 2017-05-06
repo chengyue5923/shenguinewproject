@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+            android:id="@+id/personInfoIv"
+            android:layout_width="50dp"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView
+            android:id="@+id/itemSelectView"
+            android:background="@drawable/quanzi_unselect_images"
+            android:layout_width="15dp"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="15dp" />
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/itemSelectView"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_toRightOf="@id/personInfoIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/namelayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/titlenameView"
+                    android:textSize="14sp"
+                    android:textColor="#1c1c1c"
+                    android:text="上海龟圈"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/typeText"
+                    android:background="@drawable/activity_quanzi_confirm"
+                    android:layout_toRightOf="@id/titlenameView"
+                    android:text="认证"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="7sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/namelayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/quanziPersonText"
+                    android:textSize="14sp"
+                    android:textColor="#989898"
+                    android:text="200"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/quanzi_person_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tiezaiNumberText"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/tiezai_imag_view"
+                    android:textColor="#989898"
+                    android:layout_toRightOf="@id/titlenameView"
+                    android:text="200"
+                    android:drawablePadding="5dp"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/addressText"
+                    android:layout_marginLeft="20dp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/quanzi_address_image"
+                    android:textColor="@color/shenguiappcolor"
+                    android:textSize="14sp"
+                    android:text="佛山市"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

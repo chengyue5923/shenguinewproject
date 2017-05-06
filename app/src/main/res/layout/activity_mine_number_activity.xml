@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="#f2f0f1"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:background="#f2f0f1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/confirmlistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="#f2f0f1"
+                android:dividerHeight="1sp"
+                android:focusable="false"
+                android:listSelector="@color/transparence"
+                android:overScrollMode="never"/>
+            <TextView
+                android:id="@+id/showmoreLayout"
+                android:visibility="visible"
+                android:textSize="11sp"
+                android:background="#f2f0f1"
+                android:textColor="@color/shenguiappcolor"
+                android:gravity="center"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

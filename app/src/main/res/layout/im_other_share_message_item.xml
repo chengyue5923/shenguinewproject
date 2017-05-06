@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fhzc.app.android.android.ui.view.widget.im.ShareRenderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/chat_back"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp">
+
+    <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+        android:id="@+id/user_portrait"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chat_avatar_planner" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user_portrait"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="69dp"
+        android:layout_toRightOf="@id/user_portrait"
+        android:background="@drawable/tt_other_item_bg_normal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/share_view_name"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="11dp"
+            android:paddingRight="13dp"
+            android:text="丽江复华度假世界项目投资专项基金（六期）"
+            android:textColor="#101010"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="11dp"
+            android:paddingRight="13dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/share_view_introd"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:layout_marginTop="15dp"
+                android:text="现在发型丽江复华度假世界项目投资专项基金六期"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="24dp"
+                android:src="@drawable/message_share_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2980f6"
+            android:id="@+id/share_view_type"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="查看产品详情"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</com.fhzc.app.android.android.ui.view.widget.im.ShareRenderView>

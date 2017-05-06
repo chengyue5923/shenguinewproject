@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kdmobi.gui">
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="com.shengui.app.android.shengui.android.base.ShenGuiApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.LoadActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.MainTabActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="true"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1104732758" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.AnimActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgSelectItemActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgProductDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPushTieziDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPushGongQiuDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.manage.SgPublicJoinQuanziDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.utilsview.FullScreenImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.codescan.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.video.SgVideoRecorderAvtivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgShareGuiMiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgGuiQuanManagerOfficalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.utilsview.MultiImageSelectorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPushCitySelecterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPushQuestionDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.WelcomeGuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgShareQQlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.SgProvinceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.SgCityByProvinceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgGuiQuanManagerOfficalDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.ScanImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgOtherProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgTextViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgQuanZiContentIntroDuceDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPushVideoRecorderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPushVideoPushActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgContactsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgQuanziListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.video.VideoPreviewGongQiuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineAddressManageListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.video.RecordVideoGongQiuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.video.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineAddressManageEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineChangePhoneNumberStepTwoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.video.RecordVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgBindMobileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgHotQuanZiListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.manage.SgQuanZiManagerMemberNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.im.ChatActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgGuiQuanDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.im.FullScreenImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgGuiQuanDetailActivityNewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgTieZiDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgQuanZiContentDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.BigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgCreateQuanZiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPlateDivideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgGuiQuanManagerDetailActivityNewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.manage.SgQuanziManageAvtivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.manage.SgJoinQuanziDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.manage.SgChangeQuanZhuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.manage.SgQuanZiManagerMemberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.topic.SgTopicListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.topic.SgCreateTopicDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.topic.SgTopicDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgQuanZiContentBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.activity.SgXianxiaActivityListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.activity.SgXianxiaActivityOrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.activity.SgXianXiaavtivityDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.sign.SgSignMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.search.SgSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.search.SearchProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineCollectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgEditTextImageViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.activity.SgXianXiaActivitySingUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineGongQiuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineAddressManageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineChangePassWordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineAdjustBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineAgreementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineChangePhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineOtherInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineGuiMiOrFansActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineOtherInfoNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineNoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.mine.MineDongtaiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.login.SgLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.login.StartLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.SgPushTypeSelecterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.login.SgForgetPassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.login.SgRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.video.VideoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgu.ui.SGUActivity" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgu.ui.SearchActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgu.ui.VideoPlayActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgu.ui.TeacherDetailActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgu.ui.VideoClassifyActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgu.ui.MyActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.SGHActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.CaseDetailsActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.ReceivePatientCaseDetailsActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.SGHSearchActivity" />
+        <activity
+            android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.PutQuestionsActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.SGHMyActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.SGHRecordVideoActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.SGHPutVideoActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.SGHMGSVideoActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.SGHDoctorActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.SGUHSearchActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.OfficialCaseDetailActivity"/>
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Light.Default" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Light.Default" />
+
+        <service
+            android:name="com.shengui.app.android.shengui.android.ui.activity.activity.service.UpdateService"
+            android:process=":remote" />
+
+        <receiver
+            android:name="com.shengui.app.android.shengui.android.service.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.kdmobi.gui" />
+            </intent-filter>
+        </receiver>
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="8e624958259a1cc676fed221" />
+
+        <!-- //友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53d1d3ae56240b9aad039b8b" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="官网" />
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="${UMENG_CHANNEL_VALUE}" /> -->
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.sgh.ui.DoctorDetailsActivity" />
+        <activity android:name="com.shengui.app.android.shengui.android.ui.serviceui.SGUHWebViewActivity"></activity>
+    </application>
+
+</manifest>

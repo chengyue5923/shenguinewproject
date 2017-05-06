@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:gravity="center"
+            android:paddingRight="@dimen/tenDp"
+            android:paddingLeft="@dimen/tenDp"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="60dp">
+                <TextView
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="孵化技术"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/images"
+                    android:background="@drawable/activity_quanzi_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:id="@+id/deleteItenms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/images"
+                    android:layout_marginTop="@dimen/tenDp"
+                    android:gravity="center_horizontal"
+                    android:text="删除"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+        </RelativeLayout>
+</RelativeLayout>

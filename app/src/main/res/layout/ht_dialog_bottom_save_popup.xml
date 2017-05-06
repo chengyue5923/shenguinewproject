@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:contaxt="com.hengrong.hutao.android.ui.views.dialog.dialog.BottomDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="6dp">
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/twelvetyDp"
+        android:layout_marginLeft="@dimen/twelvetyDp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_quanzi_popdialog"
+        android:orientation="vertical">
+        <!--<TextView-->
+            <!--android:id="@+id/ht_lookUpPicture"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/ht_fortyDp"-->
+            <!--android:background="@drawable/lay_my_bt"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/ht_lookUpPicture"-->
+            <!--android:textSize="14sp" />-->
+        <TextView
+            android:id="@+id/ht_album"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/lay_my_bt"
+            android:gravity="center"
+            android:text="保存图片"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/activity_quanzi_popdialog"
+        android:layout_marginRight="@dimen/twelvetyDp"
+        android:layout_marginLeft="@dimen/twelvetyDp"
+        android:id="@+id/ht_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/ht_dialog_cancel"
+        android:textSize="14sp" />
+</LinearLayout>

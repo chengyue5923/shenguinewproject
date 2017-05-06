@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <View
+        android:background="#f2f0f1"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:id="@+id/driver"
+        android:layout_height="7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootlayout"
+        android:background="@drawable/lay_my_bt"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/productImageView"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginTop="@dimen/tenDp"
+            />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/videoImageView"
+                android:layout_width="wrap_content"
+                android:background="@drawable/video_iamge"
+                android:layout_height="wrap_content"
+            />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/priductTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_marginTop="13dp"
+            android:text="11-21 10:00"
+            android:textColor="@color/producttexts"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/productTitleNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_marginTop="@dimen/tenDp"
+            android:layout_toLeftOf="@id/priductTimeText"
+            android:layout_toRightOf="@id/imagelayout"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/producttitletexts"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/productBuyText"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/productTitleNameText"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"
+            android:layout_toRightOf="@id/imagelayout"
+            android:background="@drawable/activity_product_title"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/productBuyTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/productTitleNameText"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"
+            android:layout_toRightOf="@id/productBuyText"
+            android:background="@drawable/activity_product_type"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <TextView
+            android:gravity="bottom"
+            android:id="@+id/detailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagelayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/imagelayout"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#9c9c9c"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/texttelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/detailTextView"
+            android:layout_below="@id/detailTextView"
+            android:layout_marginTop="@dimen/tenDp"
+            android:drawableLeft="@drawable/product_detail_person_phone"
+            android:drawablePadding="5dp"
+            android:text="12345678912"
+            android:textColor="#393939"
+            android:textSize="11sp" />
+
+        <TextView
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/texttelTextView"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagelayout"
+            android:layout_marginBottom="@dimen/tenDp"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_marginTop="@dimen/tenDp"
+            android:text=""
+            android:textColor="#393939"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textAddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/detailTextView"
+            android:layout_marginBottom="@dimen/tenDp"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_marginTop="@dimen/tenDp"
+            android:drawableLeft="@drawable/address_image_view"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#393939"
+            android:textSize="11sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/deleteItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/detailTextView"
+            android:layout_marginBottom="@dimen/tenDp"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_marginTop="@dimen/tenDp"
+            android:text="删除"
+            android:textColor="#e04243"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/showTv"
+        android:textSize="18sp"
+        android:layout_below="@+id/driver"
+        android:visibility="gone"
+        android:textColor="@color/shenguiappcolor"
+        android:gravity="center_horizontal"
+        android:text="关注用户，查看更多信息。"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="@dimen/twelvetyDp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

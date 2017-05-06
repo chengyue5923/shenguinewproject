@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="54dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+            android:id="@+id/personInfoIv"
+            android:layout_width="35dp"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:src="@drawable/default_pictures"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/deleteTextView"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="删除"
+            android:textSize="13sp"
+            android:textColor="@color/shenguiappcolor"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+       <RelativeLayout
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="5dp"
+           android:gravity="center_vertical"
+           android:layout_toLeftOf="@id/deleteTextView"
+           android:layout_toRightOf="@id/personInfoIv"
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+               <TextView
+
+                   android:ellipsize="end"
+                   android:singleLine="true"
+                   android:id="@+id/nameTv"
+                   android:textColor="#333333"
+                   android:textSize="11sp"
+                   android:text="某某供求信息"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:layout_marginRight="@dimen/twentyDp"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/timeTv"
+                   android:textSize="11sp"
+                   android:layout_marginLeft="@dimen/tenDp"
+                   android:text="11-21 10:00"
+                   android:textColor="#9f9f9f"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:ellipsize="end"
+                   android:singleLine="true"
+                   android:text="述动描述活动描述活动描述活动描述活动描述活动描述"
+                   android:layout_below="@id/nameTv"
+                   android:layout_marginTop="3dp"
+                   android:textColor="#9f9f9f"
+                   android:textSize="11sp"
+                   android:layout_marginRight="@dimen/twentyDp"
+                   android:id="@+id/detailTv"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+
+
+       </RelativeLayout>
+</RelativeLayout>

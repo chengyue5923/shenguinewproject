@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/edit_text_root_layout"
+    android:background="@android:color/white">
+    
+    <LinearLayout 
+        android:id="@+id/edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+	    <EditText 
+	        android:id="@+id/edit_text_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:background="@null"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="15dp"
+	        android:inputType="textMultiLine"
+
+	        android:textColor="#46464b"
+	        android:gravity="left|top"
+	        />
+    </LinearLayout>
+	<TextView
+		android:id="@+id/edit_text_max_length_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/edit_text_layout"
+		android:paddingLeft="10dp"
+		android:text="0/140字"
+		android:textColor="#757575"
+		android:textSize="16sp"
+		android:layout_alignParentRight="true"
+		android:paddingRight="10dp"
+		android:paddingBottom="3dp"
+		android:visibility="gone"
+		/>
+    <View
+		android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999"
+            android:layout_below="@id/edit_text_max_length_tv"/>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/cancenlImage"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cancel_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/wentiLayout"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@id/cancenlImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/wentiimage"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/wenti_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/tenDp"
+            android:layout_below="@id/wentiimage"
+            android:layout_centerHorizontal="true"
+            android:text="提问专家"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/itemsLayout"
+        android:layout_above="@id/wentiLayout"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/gongqiuLayout"
+            android:layout_above="@id/cancenlImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/gongqiuimage"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/wenti_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/tenDp"
+                android:layout_below="@id/gongqiuimage"
+                android:layout_centerHorizontal="true"
+                android:text="发供求"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/tieziLayout"
+            android:layout_above="@id/cancenlImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tieziimage"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tiezi_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/tenDp"
+                android:layout_below="@id/tieziimage"
+                android:layout_centerHorizontal="true"
+                android:text="发帖子"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/videoLayout"
+            android:layout_above="@id/cancenlImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/vieweoimage"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/video_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/tenDp"
+                android:layout_below="@id/vieweoimage"
+                android:layout_centerHorizontal="true"
+                android:text="拍视频"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginBottom="80dp"
+        android:layout_above="@id/itemsLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

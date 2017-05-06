@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EmptyLayout -->
+    <item type="id" name="empty_layout"/>
+    <item type="id" name="buttonEmpty"/>
+    <item type="id" name="buttonError"/>
+    <item type="id" name="buttonLoading"/>
+    <!-- 列表为空时的数据页面 -->
+    <item name="view_empty_v2_iv" type="id"/>
+    <item name="view_empty_v2_tv" type="id"/>
+    <item name="textViewMessage" type="id"/>
+    <item name="tag_position" type="id"/>
+    <item name="viewBanner" type="id"/>
+    <item name="viewBannerImage" type="id"/>
+    <item type="id" name="auto_focus"/>
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="encode_failed"/>
+    <item type="id" name="encode_succeeded"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+    <item type="id" name="search_book_contents_failed"/>
+    <item type="id" name="search_book_contents_succeeded"/>
+</resources>

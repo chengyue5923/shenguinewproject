@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="#F4F4F6"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:id="@+id/audioBtn"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/audio_image_bg" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:layout_weight="1"
+                android:id="@+id/messageEditText"
+                android:background="@drawable/layerlist_sendmessage_edittext"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:id="@+id/speakBtn"
+                android:layout_weight="1"
+                android:background="@drawable/layerlist_sendmessage_speakbtn"
+                android:gravity="center"
+                android:text="按住说话"
+                android:textColor="#565656"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:id="@+id/emojiBtn"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:src="@drawable/face_image_bg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/layerlist_sendmessage_speakbtn"
+                android:text="发送"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/sendTextView"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/addBtn"
+                android:visibility="visible"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/plus_image_view" />
+        </LinearLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:id="@+id/mEmojiAndMoreContainer"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:visibility="gone"
+               android:id="@+id/moreLayout"
+               android:columnCount="4"
+               android:paddingLeft="31dp"
+               android:paddingTop="15dp">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/photoBtn"
+                       android:src="@drawable/image_chat_view" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal"
+                       android:paddingTop="5dp"
+                       android:text="照片"
+                       android:textColor="#888888"
+                       android:textSize="12sp" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="26dp"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/carmearBtn"
+                       android:src="@drawable/take_photo_chat_view" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal"
+                       android:paddingTop="5dp"
+                       android:text="拍摄"
+                       android:textColor="#888888"
+                       android:textSize="12sp" />
+               </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:visibility="gone"
+               android:id="@+id/emojiLayout"
+               android:layout_height="wrap_content">
+               <android.support.v4.view.ViewPager
+                   android:layout_width="match_parent"
+                   android:id="@+id/emojiPager"
+                   android:overScrollMode="never"
+                   android:layout_height="150dp">
+
+               </android.support.v4.view.ViewPager>
+               <LinearLayout
+                   android:id="@+id/emojiPageControl"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="horizontal" >
+               </LinearLayout>
+           </LinearLayout>
+       </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personOnelayout"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/tenDp"
+    android:layout_height="30dp">
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="#e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textColor="@color/titlecolor"
+        android:id="@+id/tv_lv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:text="金钱龟"/>
+</RelativeLayout>

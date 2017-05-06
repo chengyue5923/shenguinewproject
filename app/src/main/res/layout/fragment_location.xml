@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <View android:layout_width="match_parent"
+          android:layout_height="6dp"
+          android:background="#f2f0f1"/>
+    <RelativeLayout
+        android:id="@+id/cityLocation"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/addressQuanNmae"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/quanzi_address_image"
+            android:textColor="@color/shenguiappcolor"
+            android:layout_centerVertical="true"
+            android:text="佛山市"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#9d9d9d"
+            android:layout_marginRight="@dimen/tenDp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/list_tappable"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:text="切换城市"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#e7e7e7"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recycle">
+
+</android.support.v7.widget.RecyclerView>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/showTv"
+        android:textSize="18sp"
+        android:textColor="@color/shenguiappcolor"
+        android:gravity="center_horizontal"
+        android:text="抱歉，没有符合的供求信息"
+        android:layout_marginTop="@dimen/twelvetyDp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

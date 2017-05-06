@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_delete_collect"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:background="@drawable/my_video_dialog_shape"
+        android:gravity="center"
+        android:text="取消收藏"
+        android:textColor="@color/main_color"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_main" />
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_collect_shape"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@color/dack_white"-->
+        <!--android:gravity="center"-->
+        <!--android:text="分享"-->
+        <!--android:textColor="@color/comment_color"-->
+        <!--android:textSize="18sp" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_main" />
+
+    <Button
+        android:id="@+id/btn_collect_cancel"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:background="@color/dack_white"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/comment_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

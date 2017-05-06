@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/SendTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/tenDp"
+            android:text="取消"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/searchlayout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_marginRight="@dimen/fiveteenDp"
+            android:layout_toLeftOf="@id/SendTextButton"
+            android:background="@drawable/activity_search_layout">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_marginLeft="@dimen/eightDp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_page_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editText"
+                android:textSize="11sp"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:background="@null"
+               android:layout_toRightOf="@id/imageview"
+               android:textColorHint="#c4c4c4"
+               android:hint="#创建话题#"
+                android:imeOptions="actionDone"
+                android:layout_marginLeft="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/changtypeLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#333333"
+            android:background="#e0e0e0"
+            android:paddingLeft="@dimen/tenDp"
+            android:gravity="center_vertical"
+            android:text="创建话题"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/textExitview"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:textColor="@color/shenguiappcolor"
+            android:text=""
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <TextView
+        android:textColor="#333333"
+        android:background="#e0e0e0"
+        android:paddingLeft="@dimen/tenDp"
+        android:gravity="center_vertical"
+        android:text="推荐话题"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none"
+        android:visibility="visible">
+        <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+            android:id="@+id/Memberlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="#f2f0f1"
+            android:dividerHeight="1sp"
+            android:focusable="false"
+            android:listSelector="@color/transparence"
+            android:overScrollMode="never"/>
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+</LinearLayout>

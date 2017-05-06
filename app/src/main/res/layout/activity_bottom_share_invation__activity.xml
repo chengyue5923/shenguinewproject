@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+ <TextView
+     android:id="@+id/sharwTextView"
+     android:background="@color/white"
+     android:textColor="#333333"
+     android:textSize="14sp"
+     android:text="邀请好友"
+     android:paddingLeft="@dimen/tenDp"
+     android:gravity="center_vertical"
+     android:layout_centerHorizontal="true"
+     android:layout_width="match_parent"
+     android:layout_height="35dp" />
+   <LinearLayout
+       android:paddingLeft="16dp"
+       android:background="@color/white"
+       android:weightSum="4"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="52dp">
+     <RelativeLayout
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="match_parent">
+      <TextView
+          android:layout_centerInParent="true"
+          android:text="微信"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="match_parent">
+      <TextView
+          android:layout_centerInParent="true"
+          android:text="龟蜜"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+     </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+     <TextView
+         android:layout_centerInParent="true"
+         android:text="QQ"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+     <TextView
+         android:layout_centerInParent="true"
+         android:text="通讯录"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     </RelativeLayout>
+
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tenDp"/>
+    <TextView
+        android:id="@+id/cancelTextView"
+        android:layout_marginBottom="@dimen/tenDp"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="取消"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+</LinearLayout>

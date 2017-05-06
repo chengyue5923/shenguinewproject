@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@color/white"
+    >
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="175dp" />
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/fifityDp"
+                    android:layout_marginLeft="@dimen/fifityDp"
+                    android:id="@+id/avName"
+                    android:text="广东龟养殖景点一日游"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="11dp"
+                    android:layout_below="@id/avName"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/numberText"
+                    android:text="135元/人"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/signNumber"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:layout_below="@id/numberText"
+                    android:text="已报名15人"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/tenDp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/signImage"
+                    android:background="@drawable/xianxia_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/singState"
+                    android:layout_centerInParent="true"
+                    android:text="报名中"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+</RelativeLayout>

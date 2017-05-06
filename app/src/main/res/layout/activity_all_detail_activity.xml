@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/locaiontlayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+                <TextView
+                    android:id="@+id/addressQuanNmae"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/quanzi_address_image"
+                    android:textColor="@color/shenguiappcolor"
+                    android:layout_centerVertical="true"
+                    android:text="佛山市"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#9d9d9d"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:text="切换城市"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="#e7e7e7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+            </RelativeLayout>
+
+
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:divider="#f2f0f1"
+                android:dividerHeight="1dp"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:listSelector="@color/transparence"
+                android:layout_height="wrap_content">
+            </com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView>
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/noticeTv"
+                android:textSize="11sp"
+                android:textColor="#9f9f9f"
+                android:gravity="center"
+                android:text="没有更多圈子了"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

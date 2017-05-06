@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/relayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/SendTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/tenDp"
+            android:text="取消"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/searchlayout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_marginRight="@dimen/fiveteenDp"
+            android:layout_toLeftOf="@id/SendTextButton"
+            android:background="@drawable/activity_search_layout">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_marginLeft="@dimen/twentyDp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_page_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/searchTv"
+                android:textColor="@color/shenguiappcolor"
+                android:layout_marginRight="@dimen/twentyDp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="搜索"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:imeOptions="actionSearch"
+                android:maxLength="25"
+                android:singleLine="true"
+                android:layout_marginRight="60dp"
+                android:id="@+id/edittext"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/image"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:hint="搜索品种、商家名称"
+                android:textColor="#333333"
+                android:textColorHint="#cdcdcd"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:background="#f2f0f1"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:visibility="visible"
+        android:id="@+id/Nonelayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<TextView-->
+            <!--android:layout_margin="@dimen/tenDp"-->
+            <!--android:text="大家都在搜索 :"-->
+            <!--android:textColor="#313131"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/searchNoDate"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <View
+                android:background="#f2f0f1"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+            <TextView
+                android:textSize="11sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/shenguiappcolor"
+                android:text="没有搜索到相关供求，试试别的关键字"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="#f2f0f1"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+
+        </RelativeLayout>
+       <TextView
+           android:id="@+id/allsearchTv"
+           android:padding="@dimen/tenDp"
+            android:text="大家都在搜索 :"
+            android:textColor="#313131"
+            android:textSize="14sp"
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+        <GridView
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="@dimen/tenDp"
+            android:background="@color/white"
+            android:id="@+id/gview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:horizontalSpacing="36dp"
+            android:columnWidth="80dp"
+            android:verticalSpacing="@dimen/tenDp"
+            android:stretchMode="columnWidth"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/searchDatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/scrollView"
+            android:scrollbars="none"
+            >
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:divider="@color/bottomlineColor"
+                android:dividerHeight="1sp"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:listSelector="@color/transparence"
+                android:layout_height="match_parent">
+            </com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView>
+        </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+    </LinearLayout>
+
+
+
+</LinearLayout>

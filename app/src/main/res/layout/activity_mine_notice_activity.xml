@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f0f1"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="消息"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text="清空"
+                android:id="@+id/statesText"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_default"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:background="#f2f0f1"
+        android:id="@+id/scrollView"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:divider="#f2f0f1"
+                android:dividerHeight="1dp"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:listSelector="@color/transparence"
+                android:layout_height="wrap_content">
+            </com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView>
+            <TextView
+                android:background="@color/white"
+                android:id="@+id/showmoreLayout"
+                android:visibility="visible"
+                android:textSize="11sp"
+                android:textColor="@color/shenguiappcolor"
+                android:gravity="center"
+                android:text="您没有收到任何信息哟！"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

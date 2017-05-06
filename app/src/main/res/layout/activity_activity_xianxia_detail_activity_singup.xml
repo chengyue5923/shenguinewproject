@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="填写信息"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/shareImage"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/product_detail_share_img"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_default"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="48dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="180dp"
+            android:layout_height="20dp">
+            <TextView
+                android:id="@+id/nameTv"
+                android:text="姓名:"
+                android:gravity="bottom"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/nameEt"
+                android:gravity="bottom"
+                android:layout_toRightOf="@id/nameTv"
+                android:hint="请填写报名者真实姓名"
+                android:background="@null"
+                android:textColorHint="#9f9f9f"
+                android:textSize="11sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_marginTop="1dp"
+                android:background="#9f9f9f"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="27dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="180dp"
+            android:layout_height="20dp">
+            <TextView
+                android:id="@+id/PhoneTV"
+                android:text="电话:"
+                android:gravity="bottom"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/PhontEt"
+                android:maxLength="11"
+                android:gravity="bottom"
+                android:inputType="number"
+                android:layout_toRightOf="@id/PhoneTV"
+                android:hint="请填写报名者联系电话"
+                android:background="@null"
+                android:textColorHint="#9f9f9f"
+                android:textSize="11sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_marginTop="1dp"
+                android:background="#9f9f9f"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:id="@+id/ConfirmTv"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="提交"
+            android:background="@color/shenguiappcolor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:layout_width="250dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

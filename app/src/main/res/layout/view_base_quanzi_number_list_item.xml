@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/viewCharText"
+        android:textColor="#333333"
+        android:background="#f0f0f0"
+        android:paddingLeft="@dimen/tenDp"
+        android:gravity="center_vertical"
+        android:text="A"
+
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+        android:id="@+id/confirmlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#f2f0f1"
+        android:dividerHeight="1sp"
+        android:focusable="false"
+        android:listSelector="@color/transparence"
+        android:overScrollMode="never"/>
+</LinearLayout>

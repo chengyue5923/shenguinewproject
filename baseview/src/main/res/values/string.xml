@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xlistview_header_hint_normal">refresh</string>
+    <string name="xlistview_header_hint_ready">refresh</string>
+    <string name="xlistview_header_hint_loading">loading...</string>
+    <string name="xlistview_header_last_time">last refresh time:</string>
+    <string name="xlistview_footer_hint_normal">more</string>
+    <string name="xlistview_footer_hint_ready">more</string>
+
+    <string name="head">head</string>
+    <string name="pull_to_refresh">Pull down refresh</string>
+    <string name="release_to_refresh">Release immediate refresh</string>
+    <string name="refreshing">Refreshing...</string>
+    <string name="pullUp_to_load">Pull up to load more</string>
+    <string name="refresh_succeed">Refresh success</string>
+    <string name="refresh_fail">refresh failed</string>
+    <string name="pullup_to_load">Pull up load more</string>
+    <string name="release_to_load">Release immediate loading</string>
+    <string name="loading">loading...</string>
+    <string name="load_succeed">Load successfully</string>
+    <string name="load_fail">Failed to load</string>
+    <string name="mi_top">Your mobile phone is XIAOMI</string>
+    <string name="mi_bottom">and need more steps before using.</string>
+</resources>

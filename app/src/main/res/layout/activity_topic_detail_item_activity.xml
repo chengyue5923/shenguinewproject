@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:ellipsize="end"
+                android:layout_centerInParent="true"
+                android:layout_width="150dp"
+
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/topicTv"
+                android:gravity="center_horizontal"
+                android:text="话题广场"
+                android:textColor="#989898"
+                android:textSize="17sp"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_default"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:background="#f2f0f1"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            >
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:divider="@color/bottomlineColor"
+                android:dividerHeight="1sp"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:listSelector="@color/transparence"
+                android:layout_height="match_parent">
+            </com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView>
+        </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <RelativeLayout
+            android:id="@+id/Buylayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="86dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/gongqiueimage"
+                android:background="@drawable/view_join_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:layout_marginBottom="@dimen/tenDp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:text="参与"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

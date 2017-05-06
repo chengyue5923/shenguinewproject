@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparence">#00000000</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="common_title">#F9F9F9</color>
+    <color name="common_title_text">#46464B</color>
+    <color name="common_back_ground">#E6E6EB</color>
+    <!--SelectedFragment-->
+    <color name="severice_text_color">#005acd</color>
+    <color name="top_text_color">#E5E4FF</color>
+    <color name="selected_main_title">#46464B</color>
+    <color name="selected_deputy_title">#C8C8CD</color>
+    <color name="selected_deputy_text">#96969B</color>
+    <color name="selected_main_text">#666666</color>
+    <color name="selected_line_color">#E6E6EB</color>
+    <!--历史投资-->
+    <color name="history_product_deputy_text">#96969B</color>
+    <color name="history_product_main_text">#666666</color>
+    <!--ChatActivity-->
+    <color name="default_light_black_color">#424242</color>
+    <color name="emo_bk_color">#ffffffff</color>
+    <color name="default_line_color">#cccccc</color>
+    <color name="color_dfdfdf">#ffdfdfdf</color>
+    <color name="color_ecececa10">#FFECECEC</color>
+    <color name="color_738e82a10">#FF738e82</color>
+    <color name="color_ff87c624">#87c624</color>
+    <color name="color_edededa10">#FFEDEDED</color>
+    <color name="transparent">#00000000</color>
+    <color name="blackFontColor">#ff000000</color>
+    <color name="color_e1e1e1a10">#ffe1e1e1</color>
+    <color name="color_d8d8d8a10">#FFD8D8D8</color>
+    <color name="backgroundColor13">#ffF1F1F1</color>
+    <color name="color_b1b1b1a10">#FFB1B1B1</color>
+    <color name="color_1e1d1da10">#FF1e1d1d</color>
+    <color name="list_item_sel_color">#eaeaea</color>
+    <color name="contact_name_color">#666666</color>
+    <color name="message_body_text_color">#a1a1a5</color>
+    <color name="message_time_color">#a0a0a0</color>
+    <color name="default_bk">#ffffff</color>
+    <color name="chat_back">#EBEBEB</color>
+    <color name="ht_diverLine">#dadada</color>
+    <color name="black">#000000</color>
+    <color name="gray">#D6D6D6</color>
+    <drawable name="gray">#D6D6D6</drawable>
+    <color name="white">#ffffff</color>
+    <color name="whitedd">#ffffffff</color>
+    <color name="activity_background">#ffedab</color>
+    <color name="title_text_7">#FFbc4445</color>
+    <color name="TextColor">#2e62a7</color>
+    <color name="appColorBlue">#2980f6</color>
+    <color name="personaltailor">#c59b69</color>
+    <color name="personaltailorline">#ececec</color>
+    <color name="base_bg">#f4f6f6</color>
+    <color name="base_actionbar_bg">#f5f5f5</color>
+
+    <color name="yuninfo_transparent">#00FFFFFF</color>
+
+    <color name="yuninfo_white">#FFFFFFFF</color>
+
+    <color name="yuninfo_hint_color">#FFA8A8A8</color>
+    <color name="yuninfo_text_color_black">#FF333333</color>
+    <color name="yuninfo_black_shadow">#CC000000</color>
+    <color name="yuninfo_white_shadow">#CCFFFFFF</color>
+    <color name="yuninfo_text_color_white">#FFF3F3F3</color>
+
+    <color name="yuninfo_popup_divider">#AAC1C1C1</color>
+    <color name="yuninfo_content_bg">#FFE9E9E9</color>
+    <color name="yuninfo_title_bg">#FFC21A0E</color>
+
+    <color name="yuninfo_video_bar_bg">#FF242424</color>
+    <color name="yuninfo_video_content_bg">#FF393939</color>
+    <color name="personalrightselet">#8a5f59</color>
+    <color name="personalrightactivity">#2386fd</color>
+    <color name="personalrigh">#97969e</color>
+
+    <color name="apptextBlue">#00bdfd</color>
+    <color name="appouttextBlue">#d1d0d6</color>
+    <color name="activity_text_color">#46464b</color>
+    <color name="titleTextColor">#47464c</color>
+    <color name="titleavtivity">#0a0a0a</color>
+    <color name="contentTextColor">#96969b</color>
+    <color name="linecolor">#e6e6eb</color>
+    <color name="textscolor">#f48e39</color>
+    <color name="whitetextscolor">#e0ffffff</color>
+    <color name="bottomlineColor">#e6e6e6</color>
+    <color name="titlelineColor">#b2b2b2</color>
+    <color name="producetitleColor">#90b5f9</color>
+    <color name="titleColor">#f9f9f9</color>
+    <color name="textpassColor">#666666</color>
+    <color name="texthintColor">#c9c8ce</color>
+    <color name="produceAdapterColor">#ff801a</color>
+    <color name="producetextColor">#a0a0a4</color>
+    <color name="reporttextColor">#98989d</color>
+    <color name="reporttimetextColor">#98989c</color>
+    <color name="linebottomColor">#97c3ff</color>
+    <color name="rightlinebottomColor">#e1d2b1</color>
+    <color name="newlinebottomColor">#fbd0ad</color>
+    <color name="repostlinebottomColor">#d4dea5</color>
+    <color name="repostcontentbottomColor">#99999e</color>
+    <color name="reposttimebottomColor">#a8a8ad</color>
+    <color name="titlebottomColor">#707070</color>
+    <color name="numberitemColor">#55555a</color>
+    <color name="numbertitleColor">#545458</color>
+    <color name="numbercontentColor">#a3a3a7</color>
+    <color name="numberphoneColor">#fbfbfc</color>
+    <color name="gundongColor">#505055</color>
+    <color name="text_color">#F8F8F8</color>
+    <color name="dropdownlist_bg">#d5c9b9</color>
+    <color name="dropdownlist_press">#9d9087</color>
+    <color name="dropdownlist_item">#f2eada</color>
+    <color name="dropdownlist_item_press">#c1b5b7</color>
+    <color name="accountcoclor">#ededf1</color>
+    <color name="context">#7fb3fa</color>
+    <color name="content">#2980f6</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="titlecolor">#333333</color>
+    <color name="backcolor">#69a6f9</color>
+    <color name="redlinecolor">#dd4b39</color>
+    <color name="backlayoutColor">#e7e6ec</color>
+    <color name="backtextColor">#46454b</color>
+    <color name="backviptextColor">#E3CB95</color>
+    <color name="yuyuetextColor">#55acee</color>
+    <color name="silverColor">#c0c0c0</color>
+    <color name="goldColor">#d3b571</color>
+
+    <color name="sendmore_textcolor">#888888</color>
+    <color name="sendmore_background">#EBEBEB</color>
+    <color name="sckground">#e0000000</color>
+    <color name="color_bule">#2F9BFF</color>
+    <color name="color_bule2">#40B3F0</color>
+    <color name="color_bule3">#99ddff</color>
+    <color name="color_bule4">#01beff</color>
+
+    <color name="bottomtextcolor">#9f9f9f</color>
+    <color name="bottomselecttextcolor">#fc7b42</color>
+    <color name="shenguiappcolor">#fc7b42</color>
+
+    <color name="producttexts">#9e9e9e</color>
+    <color name="producttitletexts">#363636</color>
+    <color name="producttitletextsline">#d7d7d7</color>
+    <color name="searchline">#f2f0f1</color>
+    <color name="platedivietextitem">#303030</color>
+
+    <color name="hex_1b89cd">#FF1B89CD</color>
+    <color name="hex_323232">#FF323232</color>
+    <color name="hex_333333">#FF333333</color>
+    <color name="hex_4d4d4d">#FF4D4D4D</color>
+    <color name="hex_666666">#FF666666</color>
+    <color name="hex_7d7d7d">#FF7D7D7D</color>
+    <color name="hex_801b89cd">#801B89CD</color>
+    <color name="hex_828282">#FF828282</color>
+    <color name="hex_8d8d8d">#FF8D8D8D</color>
+    <color name="hex_999999">#FF999999</color>
+    <color name="hex_9c9c9c">#FF9C9C9C</color>
+    <color name="hex_bcbcbc">#FFBCBCBC</color>
+    <color name="hex_c6c6c6">#FFC6C6C6</color>
+    <color name="hex_d3d3d3">#FFD3D3D3</color>
+    <color name="hex_e9e9ea">#FFE9E9EA</color>
+    <color name="hex_e9e9e9">#FFE9E9E9</color>
+    <color name="hex_eeeeee">#FFEEEEEE</color>
+    <color name="hex_f0f0f0">#FFF0F0F0</color>
+    <color name="hex_f8f8f8">#FFF8F8F8</color>
+    <color name="hex_ff203a">#FFFF203A</color>
+    <color name="hex_4680d1">#FF4680d1</color>
+    <color name="hex_ca6914">#FFca6914</color>
+
+    <!--              问政模块4个按钮颜色                   -->
+    <color name="politics_query_normal">#31C1A0</color>
+    <color name="politics_query_select">#289A80</color>
+    <color name="politics_upload_normal">#FF545A</color>
+    <color name="politics_upload_select">#CC4448</color>
+    <color name="politics_publish_normal">#1AB2EB</color>
+    <color name="politics_publish_select">#158EBC</color>
+    <color name="politics_replay_normal">#F9B500</color>
+    <color name="politics_replay_select">#C79100</color>
+    <!--              签到页面顶部返回按钮                   -->
+    <color name="action_bar_sign_btn_back_pressed">#80FFFFFF</color>
+    <color name="action_bar_sign_btn_back_normal">@color/white</color>
+    <!--              通用页面顶部返回按钮                   -->
+    <color name="action_bar_btn_back_normal">@color/hex_1b89cd</color>
+    <color name="action_bar_btn_back_pressed">#801B89CD</color>
+    <color name="item_lv_area_pressed">#33000000</color>
+    <color name="item_lv_area_normal">@color/transparent</color>
+    <color name="navigator_btn_pressed">@color/hex_f8f8f8</color>
+    <color name="navigator_btn_normal">@color/white</color>
+    <color name="setting_btn_pressed">#80FFFFFF</color>
+    <color name="setting_btn_normal">@color/white</color>
+    <color name="filter_item_btn_pressed">@color/hex_f8f8f8</color>
+    <color name="filter_item_btn_normal">@color/white</color>
+    <color name="submit_btn_normal">@color/hex_1b89cd</color>
+    <color name="submit_btn_pressed">#166EA5</color>
+    <color name="submit_btn_disabled">@color/hex_bcbcbc</color>
+    <color name="user_form_item_input_hint_color">#FFC6C6C6</color>
+    <!--              获取验证码按钮样式                   -->
+    <color name="verify_text_normal">@color/hex_7d7d7d</color>
+    <color name="verify_text_pressed">@color/white</color>
+    <color name="verify_text_disabled">@color/white</color>
+    <color name="verify_btn_normal">@color/hex_eeeeee</color>
+    <color name="verify_btn_pressed">@color/hex_bcbcbc</color>
+    <color name="verify_btn_disabled">@color/hex_bcbcbc</color>
+    <color name="hex_646464">#FF646464</color>
+    <color name="hex_9b9b9b">#FF9B9B9B</color>
+    <color name="hex_fd8319">#fd8319</color>
+    <color name="hex_3866a7">#3866a7</color>
+    <color name="navigation_background">#E61C89CE</color>
+    <color name="half_transparent_white">#80FFFFFF</color>
+    <color name="hex_fafafa">#FFFAFAFA</color>
+    <color name="hex_ededed">#FFEDEDED</color>
+
+    <!-- Theme Colors -->
+    <color name="theme_white_primary">#FFFFFF</color>
+    <color name="theme_white_dark">#FFFFFF</color>
+    <color name="theme_white_accent">#000000</color>
+
+    <color name="theme_blue_primary">#2196F3</color>
+    <color name="theme_blue_dark">#1976D2</color>
+    <color name="theme_blue_accent">#FF4081</color>
+
+    <color name="theme_orange_primary">#FF5722</color>
+    <color name="theme_orange_dark">#E64A19</color>
+    <color name="theme_light_blue_accent">#FF4081</color>
+
+    <color name="theme_cyan_primary">#00BCD4</color>
+    <color name="theme_cyan_dark">#0097A7</color>
+    <color name="theme_cyan_accent">#FF4081</color>
+
+    <color name="theme_green_primary">#4CAF50</color>
+    <color name="theme_green_dark">#388E3C</color>
+    <color name="theme_green_accent">#FF4081</color>
+
+    <color name="theme_teal_primary">#009688</color>
+    <color name="theme_teal_dark">#00796B</color>
+    <color name="theme_teal_accent">#FF4081</color>
+
+    <color name="theme_red_primary">#da4336</color>
+    <color name="theme_red_dark">#b93221</color>
+    <color name="theme_red_accent">#3D5AFE</color>
+
+    <color name="theme_pink_primary">#E91E63</color>
+    <color name="theme_pink_dark">#C2185B</color>
+    <color name="theme_pink_accent">#3D5AFE</color>
+
+    <color name="theme_purple_primary">#673AB7</color>
+    <color name="theme_purple_dark">#512DA8</color>
+    <color name="theme_purple_accent">#FF4081</color>
+
+    <color name="theme_grey_primary">#616161</color>
+    <color name="theme_grey_dark">#424242</color>
+    <color name="theme_grey_accent">#00E676</color>
+
+    <color name="theme_black_primary">#2A2A2F</color>
+    <color name="theme_black_dark">#151515</color>
+    <color name="theme_black_accent">#FF4081</color>
+
+    <color name="theme_brown_primary">#785447</color>
+    <color name="theme_brown_dark">#5C3F36</color>
+    <color name="theme_blown_accent">#785447</color>
+
+
+
+    <color name="header">#3199f7</color>
+    <color name="top">#2b86d8</color>
+
+    <color name="header_search_color">#f3f3f3</color>
+    <color name="header_font_color">#BCBCBC</color>
+    <color name="bottom_main">#E3E3E3</color>
+    <color name="main_color">#FC7B42</color>
+    <color name="red">#f00</color>
+
+    <color name="comment_color">#484848</color>
+    <color name="comment_color_1">#555555</color>
+    <color name="comment_color_2">#818181</color>
+
+    <color name="text_color_gave">#CBCBCB</color>
+    <color name="dack_white">#fbfbfb</color>
+
+    <color name="sgh_gray">#9d9d9d</color>
+
+    <color name="dack">#00949494</color>
+
+    <color name="content_color">#F6F6F6</color>
+</resources>

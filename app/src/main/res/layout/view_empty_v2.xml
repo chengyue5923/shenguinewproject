@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/view_empty_v2_bg_h"
+        android:layout_height="@dimen/view_empty_v2_bg_h"
+        android:id="@+id/imglayout"
+        android:background="@drawable/view_empty_bg"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@id/view_empty_v2_iv"
+            android:layout_width="@dimen/view_empty_v2_ic_h"
+            android:layout_height="@dimen/view_empty_v2_ic_h"
+            android:src="@drawable/ic_empty"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imglayout"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="暂无数据"
+        android:textSize="@dimen/view_empty_v2_text_size"
+        android:textColor="@color/shenguiappcolor"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

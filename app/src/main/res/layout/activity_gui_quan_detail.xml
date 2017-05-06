@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:id="@+id/backImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:background="@drawable/back_default" />
+
+                <TextView
+                    android:id="@+id/NameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="上海龟圈"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/topLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:text="话题广场"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#f2f0f1" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+                <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                    android:id="@+id/personInfoIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/tenDp" />
+                <ImageView
+                    android:id="@+id/nextDetailLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:background="@drawable/list_tappable" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_toLeftOf="@id/nextDetailLayout"
+                    android:layout_toRightOf="@id/personInfoIv"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/topLauout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="bottom">
+
+                        <TextView
+                            android:id="@+id/QuanZiNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="上海龟圈"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/QuanzitypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/QuanZiNameText"
+                            android:background="@drawable/activity_quanzi_confirm"
+                            android:text="认证"
+                            android:textColor="@color/white"
+                            android:textSize="7sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/NumberTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/topLauout"
+                        android:layout_marginTop="3dp"
+                        android:drawableLeft="@drawable/quanzi_person_image"
+                        android:drawablePadding="5dp"
+                        android:text="200"
+                        android:textColor="#9f9f9f"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tiezaiNumberText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/topLauout"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/NumberTextView"
+                        android:drawableLeft="@drawable/tiezai_imag_view"
+                        android:drawablePadding="5dp"
+                        android:text="200"
+                        android:textColor="#9f9f9f"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/addressQuanziText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/topLauout"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tiezaiNumberText"
+                        android:drawableLeft="@drawable/quanzi_address_image"
+                        android:drawablePadding="5dp"
+                        android:text="佛山市"
+                        android:textColor="@color/shenguiappcolor"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/NumberTextView"
+                        android:text="介绍文本说明简介"
+                        android:textColor="#9f9f9f"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#f1eff0" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/allTextView"
+                    android:drawablePadding="@dimen/tenDp"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:text="全部"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:weightSum="6"
+                    android:layout_toLeftOf="@id/allTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:id="@+id/personOnelayout"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                            android:id="@+id/personInfoIvItemd"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/personTwolayout"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                            android:id="@+id/personInfoIvItemtwo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/personThreelayout"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                            android:id="@+id/personInfoIvthree"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/personfourlayout"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                            android:id="@+id/personInfoIvfour"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/personfivelayout"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                            android:id="@+id/personInfoIvfive"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/personsixlayout"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                            android:id="@+id/personInfoIvItemdsix"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#f1eff0" />
+          <LinearLayout
+              android:layout_marginRight="@dimen/tenDp"
+              android:layout_marginLeft="@dimen/tenDp"
+              android:layout_width="match_parent"
+              android:layout_height="45dp">
+                  <RelativeLayout
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent">
+                      <TextView
+                          android:id="@+id/hotlayout"
+                          android:text="全部"
+                          android:textSize="15sp"
+                          android:textColor="@color/shenguiappcolor"
+                          android:gravity="center"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent" />
+                      <View
+                          android:layout_alignParentBottom="true"
+                          android:id="@+id/hotlineView"
+                          android:background="@color/shenguiappcolor"
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"/>
+
+                  </RelativeLayout>
+                  <View
+                      android:layout_gravity="center_vertical"
+                      android:layout_width="1dp"
+                      android:background="#f2f0f1"
+                      android:layout_height="15dp"/>
+                  <RelativeLayout
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent">
+                      <TextView
+                          android:text="精华"
+                          android:textSize="15sp"
+                          android:textColor="@color/titlecolor"
+                          android:gravity="center"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/originzationLayout" />
+                      <View
+                          android:layout_alignParentBottom="true"
+                          android:id="@+id/origiazationlineView"
+                          android:background="@color/white"
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"/>
+                  </RelativeLayout>
+                  <View
+                      android:layout_gravity="center_vertical"
+                      android:layout_width="1dp"
+                      android:background="#f2f0f1"
+                      android:layout_height="15dp"/>
+                  <RelativeLayout
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent">
+                      <TextView
+                          android:id="@+id/allLayout"
+                          android:text="贵池指导"
+                          android:textSize="15sp"
+                          android:textColor="@color/titlecolor"
+                          android:gravity="center"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent" />
+                      <View
+                          android:layout_alignParentBottom="true"
+                          android:id="@+id/alllineView"
+                          android:background="@color/white"
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"/>
+                  </RelativeLayout>
+                  <View
+                      android:layout_gravity="center_vertical"
+                      android:layout_width="1dp"
+                      android:background="#f2f0f1"
+                      android:layout_height="15dp"/>
+                  <RelativeLayout
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent">
+                      <TextView
+                          android:id="@+id/mineLayout"
+                          android:text="孵化"
+                          android:textSize="15sp"
+                          android:textColor="@color/titlecolor"
+                          android:layout_width="match_parent"
+                          android:gravity="center"
+                          android:layout_height="match_parent" />
+                      <View
+                          android:layout_alignParentBottom="true"
+                          android:id="@+id/minelineView"
+                          android:background="@color/white"
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"/>
+                  </RelativeLayout>
+              <RelativeLayout
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/maleTab"
+                      android:text="公母鉴别"
+                      android:textSize="15sp"
+                      android:textColor="@color/titlecolor"
+                      android:layout_width="match_parent"
+                      android:gravity="center"
+                      android:layout_height="match_parent" />
+                  <View
+                      android:layout_alignParentBottom="true"
+                      android:id="@+id/maleTalineView"
+                      android:background="@color/white"
+                      android:layout_width="match_parent"
+                      android:layout_height="2dp"/>
+              </RelativeLayout>
+          </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#f1eff0" />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--<com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView-->
+                <!--android:id="@+id/listview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/white"-->
+                <!--android:divider="#f2f0f1"-->
+                <!--android:dividerHeight="8dp"-->
+                <!--android:focusable="false"-->
+                <!--android:listSelector="@color/transparence"-->
+                <!--android:overScrollMode="never" />-->
+
+        </LinearLayout>
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+</LinearLayout>

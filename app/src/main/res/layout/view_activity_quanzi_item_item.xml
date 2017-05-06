@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+            android:id="@+id/personInfoIv"
+            android:layout_width="50dp"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp"
+            android:src="@drawable/default_pictures"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:id="@+id/nextDetailLayout"
+            android:layout_marginRight="@dimen/tenDp"
+
+            android:layout_centerVertical="true"
+            android:background="@drawable/quanzi_unselect_images"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_toRightOf="@id/personInfoIv"
+            android:layout_toLeftOf="@id/nextDetailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+                <RelativeLayout
+                    android:gravity="bottom"
+                    android:id="@+id/topLauout"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+                        <TextView
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="#333333"
+                            android:textSize="15sp"
+                         android:maxWidth="200dp"
+                            android:text="上海龟圈"
+                            android:id="@+id/QuanZiNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+
+                            android:layout_toRightOf="@id/QuanZiNameText"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/tenDp"
+                            android:orientation="horizontal"
+                            android:id="@+id/personLayout"
+                            android:gravity="center_vertical"
+                            android:layout_toLeftOf="@id/allTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+                       <!--<TextView-->
+                            <!--android:layout_alignParentBottom="true"-->
+                            <!--android:id="@+id/QuanzitypeText"-->
+                            <!--android:layout_toRightOf="@id/QuanZiNameText"-->
+                            <!--android:text="认证"-->
+                            <!--android:layout_marginLeft="5dp"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:background="@drawable/activity_quanzi_confirm"-->
+                            <!--android:textSize="7sp"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/NumberTextView"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/quanzi_person_image"
+                    android:textColor="#9f9f9f"
+                    android:textSize="11sp"
+                    android:layout_below="@id/topLauout"
+                    android:text="200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tiezaiNumberText"
+                    android:layout_toRightOf="@id/NumberTextView"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/tiezai_imag_view"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#9f9f9f"
+                    android:textSize="11sp"
+                    android:layout_below="@id/topLauout"
+                    android:text="200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/addressQuanziText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tiezaiNumberText"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/quanzi_address_image"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/shenguiappcolor"
+                    android:textSize="11sp"
+                    android:layout_below="@id/topLauout"
+                    android:text="佛山市"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:id="@+id/textDetail"
+                    android:textColor="#9f9f9f"
+                    android:textSize="11sp"
+                    android:maxWidth="400dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_below="@id/NumberTextView"
+                    android:text="介绍文本说明简介"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:paddingRight="@dimen/tenDp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+
+              <TextView
+                android:id="@+id/toolbar_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center"
+                  android:text="取消"
+                  android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+             />
+
+           <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/toolbar_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/toolbar_right_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:paddingTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/title_message" />
+
+                <TextView
+                    android:id="@+id/messageRedImage"
+                    android:layout_width="wrap_content"
+                    android:textSize="0sp"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/toolbar_right_image"
+                    android:layout_alignTop="@id/toolbar_right_image"
+                    android:background="@drawable/shape_message_circle_reddot"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/finishTextView"
+                    android:text="完成"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/toolbar"
+        android:background="#b2b2b2"
+        android:visibility="visible" />
+</RelativeLayout>

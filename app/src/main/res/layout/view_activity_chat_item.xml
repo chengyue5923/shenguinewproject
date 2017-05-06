@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="52dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+            android:id="@+id/personInfoIv"
+            android:layout_width="35dp"
+            android:layout_toRightOf="@id/infoBack"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:src="@drawable/default_pictures"
+            android:layout_gravity="center_vertical"
+            />
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/personInfoIv"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:text="活动公告"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:id="@+id/contentTv"
+                    android:textColor="#9f9f9f"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/titleTv"
+                    android:text="活动将在哪里举行"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#9f9f9f"
+                    android:textSize="11sp"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:gravity="right"
+                    android:text="10分钟"
+                    android:layout_toRightOf="@id/titleTv"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/timeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />r
+
+
+        </RelativeLayout>
+        
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:divider="#f2f0f1"
+                android:dividerHeight="1dp"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:listSelector="@color/transparence"
+                android:layout_height="wrap_content">
+            </com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView>
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+</RelativeLayout>

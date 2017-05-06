@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="dev">http://192.168.30.146:8088/</string>-->
+    <!--<string name="onLine">http://192.168.30.146:8088/</string>-->
+    <string name="dev">http://120.24.49.204:8080/</string>
+    <string name="picture_dev">http://120.24.49.204:8080</string>
+
+    <!--<string name="onLine">http://dev-apptest.foriseassets.com :8080/</string>-->
+    <!--<string name="picture_onLine">http://dev-apptest.foriseassets.com :8080</string>-->
+
+    <string name="onLine">http://120.24.49.204:8080/</string>
+    <string name="picture_onLine">http://120.24.49.204:8080</string>
+</resources>

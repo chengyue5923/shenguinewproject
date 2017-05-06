@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:padding="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+        <TextView
+            android:id="@+id/nameTv"
+            android:text="张三丰"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/phoneTv"
+            android:text="15100233758"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_alignParentBottom="true"
+            android:text="河北保定"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/addressTv"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+        <ImageView
+            android:id="@+id/addressSelectIv"
+            android:layout_width="12dp"
+            android:layout_centerVertical="true"
+            android:layout_height="12dp" />
+        <TextView
+            android:id="@+id/UsualaddressTv"
+            android:layout_marginLeft="9dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/addressSelectIv"
+            android:text="默认地址"
+            android:gravity="center_vertical"
+            android:textColor="@color/shenguiappcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/shenguiappcolor"
+            android:text="删除"
+            android:id="@+id/deleteTv"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/viewss"
+            android:background="#333333"
+            android:layout_marginRight="7dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/deleteTv"
+            android:layout_width="1dp"
+            android:layout_height="14dp"/>
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/viewss"
+            android:layout_centerVertical="true"
+            android:textColor="@color/shenguiappcolor"
+            android:text="修改"
+            android:gravity="center_vertical"
+            android:id="@+id/changeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

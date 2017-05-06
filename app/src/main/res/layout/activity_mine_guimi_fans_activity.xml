@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f0f1"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/titleName"
+                android:gravity="center_horizontal"
+                android:text="关注列表"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/statesText"
+                android:textSize="14sp"
+                android:text="保存"
+                android:textColor="@color/shenguiappcolor"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_default"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!--<com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:scrollbars="none"-->
+        <!--android:visibility="visible"-->
+        <!--android:id="@+id/scrollView"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_height="match_parent"-->
+        <!--&gt;-->
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:background="#e6e6e6"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#f1eff0" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:id="@+id/gongqieLayout"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="14sp"
+                            android:textColor="@color/shenguiappcolor"
+                            android:id="@+id/TaGoneTv"
+                            android:text="龟蜜"
+
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/gongNumber"
+                            android:textSize="11sp"
+                            android:layout_below="@id/TaGoneTv"
+                            android:text="10"
+                            android:textColor="@color/shenguiappcolor"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/goneView"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/shenguiappcolor"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:background="#f3f1f2"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"/>
+                <RelativeLayout
+                    android:id="@+id/tieLayout"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="14sp"
+                            android:textColor="#333333"
+                            android:id="@+id/TaTieTv"
+                            android:text="粉丝"
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:textSize="11sp"
+                            android:layout_below="@id/TaTieTv"
+                            android:text="10"
+                            android:id="@+id/tieNumber"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/tieView"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/my_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    <!--</com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>-->
+</LinearLayout>

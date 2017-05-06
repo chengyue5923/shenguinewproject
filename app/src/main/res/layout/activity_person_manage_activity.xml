@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+        android:id="@+id/personInfoIvItemd"
+        android:layout_width="40dp"
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_pictures"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        />
+
+</RelativeLayout>

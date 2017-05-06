@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<com.shengui.app.android.shengui.android.ui.activity.activity.im.GroupGridView
+        android:id="@+id/show_detail_emoji_grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="0dp"
+        android:clickable="true"
+        android:background="@android:color/white"
+        android:focusableInTouchMode="true"
+        android:listSelector="#00000000">
+    </com.shengui.app.android.shengui.android.ui.activity.activity.im.GroupGridView>
+</LinearLayout>

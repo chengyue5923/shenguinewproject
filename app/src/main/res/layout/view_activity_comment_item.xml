@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/tenDp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content">
+                        <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                            android:id="@+id/personInfoIv"
+                            android:layout_width="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/default_pictures"
+                            />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/tenDp"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/titleLayout"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp">
+                                <TextView
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/nameTiezaiText"
+                                    android:textStyle="bold"
+                                    android:textColor="#333333"
+                                    android:textSize="10sp"
+                                    android:text="以龟会友"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/nameTiezaiText"
+                                    android:visibility="visible"
+                                    android:textColor="#ff2e2e"
+                                    android:text="回复楼主"
+                                    android:gravity="bottom"
+                                    android:textSize="9sp"
+                                    android:id="@+id/focusText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                        </LinearLayout>
+                                <TextView
+                                    android:layout_marginTop="3dp"
+                                    android:id="@+id/timeTieZiTextView"
+                                    android:textColor="#9f9f9f"
+                                    android:textSize="10sp"
+                                    android:text="1小时"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/contentTextView"
+                            android:textColor="#333333"
+                            android:textSize="12sp"
+                            android:layout_marginTop="@dimen/tenDp"
+                            android:text="测试"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/tenDp"
+                            android:layout_marginBottom="@dimen/tenDp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:id="@+id/niceLayout"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/niceTv"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/tiezi_like"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:id="@+id/niceTextView"
+                                            android:text="0"
+                                            android:textColor="#9f9f9f"
+                                            android:textSize="11sp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/commentLayout"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_toLeftOf="@id/niceLayout"
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/commonTv"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/tiezi_comment"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:id="@+id/commentView"
+                                            android:text="0"
+                                            android:textColor="#9f9f9f"
+                                            android:textSize="11sp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                        </RelativeLayout>
+                </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,221 @@
+package com.shengui.app.android.shengui.configer.enums;
+
+
+/**
+ * HttpConfig
+ */
+public enum HttpConfig {
+    /**
+     * 消息轮询
+     */
+    yapull(1),
+    publish(2),
+    audioContent(3),
+    pushtiezi(4),
+    register(5),
+    login(6),
+    //发帖子
+    UploadImage(7),
+    //获取乌龟的品种
+    getTorType(8),
+    //发帖子
+    pushTie(9),
+    //发供求
+    pushGongQiu(10),
+    //我加入的圈子
+    joinQuanZi(11),
+    //创建圈子
+    CreateQuanZi(12),
+    //设置精华
+    setDigest(13),
+    //置顶
+    setTop(14),
+    //点赞
+    setDig(15),
+    //获取最新帖子
+    getnewlist(16),
+    //帖子详情接口
+    get_info(17),
+    //供求列表
+    getSelectSupply(18),
+    //供求额详情
+    getGongQiuDetail(19),
+    //话题广场
+    getTopicList(20),
+    //添加话题
+    addTopicList(21),
+    //热门板块
+    hotPlateList(22),
+    //获取待审核进入圈子的成员列表
+    Circlenoapprove(23),
+    //获取圈子的成员列表
+    Circlepprove(24),
+    //加入圈子审批
+    CircleUnpass(25),
+    //删除圈子成员
+    Circleapprove_unpassed(26),
+    //我关注的人发布的供求列表
+    getattlist(27),
+    //发布信息
+    Impub(28),
+    //获取详细消息内容接口
+    ImgetDetailmessage(29),
+    //获取消息历史
+    Impubgethistory(30),
+    //圈主转让
+    circle_transfer(31),
+    //我发布的供求列表
+    get_my_supply(32),
+    //获取我发布的帖子列表
+    get_my_post(33),
+    //加入收藏
+    Favoriteadd(34),
+    //删除收藏
+    Favoritedel(35),
+    //获取我的收藏
+    Favoriteget_my_favorite(36),
+    //获取我关注的人的列表
+    get_my_attension(37),
+    //获取关注我的人的列表
+    get_attension_my(38),
+
+    //关注某人
+    Attentionadd(39),
+    //取消关注某人
+    Attentiondel(40),
+    //安话题获取帖子列表
+    TopicTieZiList(41),
+    //圈子详情
+    CircleDetail(42),
+    //活动列表
+    ActivityList(43),
+    //活动详情
+    ActivityDetails(44),
+    //活动报名
+    ActivitySingUp(45),
+    //帖子评论点赞
+    CommentSet_dig(46),
+    //帖子评论接口
+    CommentPub(47),
+    //获取帖子评论列表
+    CommentGetlist(48),
+    //获取帖子评论列表
+    ApplyJoinCircle(49),
+    //编辑圈子
+    EditCircle(50),
+    //编辑圈子
+    ActivityOrder(51),
+    //退出圈子
+   exitCircle(52),
+    //删除帖子
+    DeleteTieZi(53),
+    //删除供求
+    DeleteGongQiu(54),
+    //用户签到
+    GetCircleFocusList(55),
+    //用户签到
+    SignUser(56),
+    //获取用户自然月内的签到信息
+    SingListInfo(57),
+    //获取用户自然月内的签到信息
+    SingGiftInfo(58),
+    //获取用户自然月内的签到信息
+    GiftListInfo(59),
+    //获取用户自然月内的签到信息
+    BindJpush(60),
+    //修改用户密码
+    editpw(61),
+    //修改用户信息
+    edituserinfo(62),
+    //城市选择
+    CitySelecter(63),
+    //根据经纬度获取系统中城市的信息
+    CityLocaling(64),
+    //文件上传
+    uploadVideoFile(65),
+    //	发送手机验证码
+    sendMobileCode(66),
+    //文件上传
+    connectlogin(67),
+    //	发送手机验证码
+    connectbind(68),
+    //我的信息
+    getmyfullinfo(69),
+    //	获取省份列表
+    Addressgetprovince(70),
+    //根据省id获取城市列表
+    Addressget_city_by_province(71),
+    //	添加收货地址
+    Addressadd(72),
+    //收货地址详情
+    Addressadd_info(73),
+    //收货地址列表
+    Addressadd_list(74),
+    //删除收货地址
+    Addressdel(75),
+    //修改收货地址
+    Addressedit_address(76),
+    //更换手机号
+    change_mobile(77),
+    //获取引导页广告图片
+    get_ad_page(78),
+    //获取首页焦点图及导航四项（四个菱形图片）
+    get_focus_nav(79),
+    //用户协议
+    protocol(80),
+    //意见反馈
+    feedback(81),
+    //搜索
+    SearchIndex(82),
+    //搜索供求时候的大家都在搜
+    supply_hot_search(83),
+    //热门闺蜜圈
+    hot_circle(84),
+    //圈子大家都在搜
+    search_hot_search(85),
+    //我常去的圈子
+    usual_circle(86),
+    //举报帖子
+    expose_post(87),
+    //搜索附近龟蜜
+    searchnearby(88),
+    //appshengji
+    appUpdate(89),
+    //关于神龟
+    AboutShenGui(90),
+    //更新用户位置信息
+    loginlocation(91),
+    //moveto板块
+    MoveToSection(92),
+    //获取文章内容
+    get_article(94),
+    //用户消息
+    usernotice(93),
+    //清空用户消息
+    usernotice_del(95),
+    //获取安装引导图
+    get_install_boot_map(96),
+    //分享给龟蜜
+    set_user_notice(97),
+    //忘记密码
+    forgetPass(98),
+    //wexin token
+    weixintoken(99),
+    //微信info
+    weixininfo(100),
+    // 圈主移除帖子
+    quanzhuDelete(101),
+    //推荐话题
+    recommend_topic(102)
+    ;
+    int type;
+
+    HttpConfig(int type) {
+        this.type = type;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+}

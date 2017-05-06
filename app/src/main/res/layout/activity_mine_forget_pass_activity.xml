@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/titleName"
+                android:gravity="center_horizontal"
+                android:text="找回密码"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/statesText"
+                android:textSize="14sp"
+                android:text="注册"
+                android:textColor="@color/shenguiappcolor"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_default"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+
+        android:id="@+id/loginLaout"
+        android:orientation="vertical"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/smart"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:text="其他方式快速登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+   <RelativeLayout
+       android:layout_marginTop="15dp"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:id="@+id/weixinLayout"
+           android:gravity="center"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/weixinImage"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/weixin_iamge"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:text="微信"
+               android:gravity="center"
+               android:textColor="#07af12"
+               android:textSize="10sp"
+               android:layout_below="@id/weixinImage"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_marginLeft="45dp"
+           android:layout_toRightOf="@id/weixinLayout"
+           android:id="@+id/QQLayout"
+           android:gravity="center"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/qqImage"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/qq_iamge"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:text="QQ"
+               android:gravity="center"
+               android:textColor="#19b6ff"
+               android:textSize="10sp"
+               android:layout_below="@id/qqImage"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+   </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/confrmTv"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginLaout"
+        android:gravity="center"
+        android:textColor="@color/shenguiappcolor"
+        android:textSize="15sp"
+        android:text="注册"
+        android:background="@drawable/activity_plate_divided_select_item"
+        android:layout_width="250dp"
+        android:layout_height="35dp" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="35dp">
+            <EditText
+                android:id="@+id/phoneEt"
+                android:textColor="#333333"
+                android:textSize="11sp"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColorHint="#8f8f8f"
+                android:paddingLeft="8dp"
+                android:hint="请填写手机号"
+                android:background="@drawable/activity_login_item"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="180dp"
+                android:layout_height="35dp" />
+            <com.shengui.app.android.shengui.android.ui.utilsview.CountDownTimeButton
+                android:background="@drawable/activity_detail_phone_bg"
+                android:layout_centerInParent="true"
+                android:id="@+id/sentCodeText"
+                android:layout_marginLeft="-5dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:text="发送验证码"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/codeEt"
+            android:layout_marginTop="14dp"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:inputType="number|textPassword"
+            android:maxLength="6"
+            android:textColorHint="#8f8f8f"
+            android:paddingLeft="8dp"
+            android:hint="输入验证码"
+            android:background="@drawable/activity_login_item"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="35dp" />
+        <EditText
+            android:id="@+id/passEt"
+            android:layout_marginTop="14dp"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColorHint="#8f8f8f"
+            android:paddingLeft="8dp"
+            android:hint="输入密码"
+            android:background="@drawable/activity_login_item"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="35dp" />
+        <EditText
+            android:id="@+id/passagainEt"
+            android:layout_marginTop="14dp"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColorHint="#8f8f8f"
+            android:paddingLeft="8dp"
+            android:hint="再次输入密码"
+            android:background="@drawable/activity_login_item"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/loginTv"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/confrmTv"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="确认修改"
+            android:background="@drawable/activity_quanzi_confirm"
+            android:layout_width="250dp"
+            android:layout_height="35dp" />
+
+        <RelativeLayout
+            android:layout_marginBottom="95dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/image"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/agreementTv"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/image"
+                android:text="同意《用户使用协议》"
+                android:textSize="12sp"
+                android:textColor="#343434"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

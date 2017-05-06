@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">神龟网</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ht_dialog_cancel">取消</string>
+    <string name="ht_lookUpPicture">查看图片</string>
+    <string name="ht_comments_produce_Picture">请选择</string>
+    <string name="ht_comments_produce_take_photo">拍照</string>
+    <string name="ht_comments_produce_album">手机相册</string>
+    <string name="ht_takePhoto">拍照</string>
+    <string name="ht_album">相册</string>
+    <string name="ht_save">保存</string>
+    <string name="login_phone_null">手机号码不能为空</string>
+    <string name="login_code_null">证件号码不能为空</string>
+    <string name="bind_code_null">验证码不能为空</string>
+    <string name="loginaccount">账     号</string>
+    <string name="sign">签到</string>
+    <string name="sign_succeed_today">今日签到成功</string>
+    <string name="sure">确定</string>
+    <string name="have_signed">已签到</string>
+    <string name="much_score_int">%1$d 分</string>
+    <string name="you_have_sign"><Data><![CDATA[<font color="%1$s">您已连续签到 </font><font color="%2$s">%3$d</font> <font color="%1$s">天，累计获得积分</font>]]></Data></string>
+    <string name="yuninfo_view_descreption">Image View</string>
+    <string-array name="month_array">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <!--ChatActivity-->
+    <string name="im_capture_photo">拍摄照片</string>
+    <string name="im_select_photo">选择图片</string>
+    <string name="send_message">发表</string>
+    <string name="send_conversation_textmessage">发送</string>
+    <string name="hold_to_talk">按住说话</string>
+    <string name="media_recording">录制中</string>
+    <string name="hold_to_film">按住拍摄</string>
+    <string name="tip_for_voice_forward">按住 说话</string>
+    <string name="release_to_send_voice">松开 结束</string>
+    <string name="take_photo_btn_text">照片</string>
+    <string name="take_camera_btn_text">拍照</string>
+    <string name="message_null">不能发送空内容哦！</string>
+    <string name="message_image_desc">Message Image</string>
+    <string name="sdcard_unavaluable">请检查存储卡是否可用</string>
+
+    <string name="homepage_header_search">搜索课程关键字</string>
+
+    <string-array name="sgu_homepage_tab">
+        <item>热门视频</item>
+        <item>讲师团队</item>
+        <item>关于我们</item>
+    </string-array>
+
+    <string-array name="sgu_video_tab">
+        <item>评论</item>
+        <item>赞赏榜</item>
+        <item>简介</item>
+        <item>相关视频</item>
+    </string-array>
+
+    <string-array name="sgu_video_classify">
+        <item>全部</item>
+        <item>医龟</item>
+        <item>养龟</item>
+        <item>热点</item>
+        <item>龟趣</item>
+    </string-array>
+
+    <string-array name="sgu_my">
+        <item>我的收藏</item>
+        <item>观看历史</item>
+        <item>购买记录</item>
+        <item>我的消息</item>
+    </string-array>
+
+    <string-array name="sgh_homepage">
+        <item>问诊中心</item>
+        <item>最新病例</item>
+        <item>常见案例</item>
+    </string-array>
+
+    <string-array name="sgh_my">
+        <item>我的提问</item>
+        <item>我的收藏</item>
+    </string-array>
+
+    <string-array name="sguh_service">
+        <item>课程专题</item>
+        <item>案例专题</item>
+    </string-array>
+
+    <!--type：（1：全部类型、2：未回答、3：已解答、4：追问中、5已完成）-->
+    <string-array name="sgh_doctor_ask">
+        <item>全部</item>
+        <item>未回答</item>
+        <item>已解答</item>
+        <item>追问中</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="sgh_doctor">
+        <item>我的解答</item>
+        <item>我的诊金</item>
+        <item>我的评论</item>
+    </string-array>
+
+    <string-array name="sguh_search">
+        <item>病例</item>
+        <item>课程</item>
+    </string-array>
+</resources>

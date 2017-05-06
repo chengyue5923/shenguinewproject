@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="每日签到"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/orderText"
+                android:gravity="center_horizontal"
+                android:text="活动订单"
+                android:textColor="@color/shenguiappcolor"
+                android:textSize="17sp"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_default"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@color/white"
+                android:id="@+id/titlenameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+                <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                    android:id="@+id/personInfoIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/default_pictures"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/tenDp" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/signstates"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="未签到"
+
+                    android:textColor="@color/white"
+                    android:background="@drawable/activity_plate_dicided_create_view"
+                    android:layout_width="57dp"
+                    android:layout_height="25dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_toLeftOf="@id/signstates"
+                    android:layout_toRightOf="@id/personInfoIv"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/topLauout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="bottom">
+
+                        <TextView
+                            android:id="@+id/QuanZiNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="龟蜜先生"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/NumberTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/topLauout"
+                        android:layout_marginTop="3dp"
+                        android:text="连续签到1天，今日排行第1名。"
+                        android:textColor="#333333"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <View
+                android:background="#e6e6e6"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+                <TextView
+                    android:id="@+id/signtextViewaa"
+                    android:textColor="#9e9e9e"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="签到规则"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/signtextViewaa"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:padding="3dp"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/activity_quanzi_confirm"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:id="@+id/giftText"
+                            android:text="未知"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/giftOneDay"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/giftText"
+                            android:text="7天"
+                            android:gravity="center_horizontal"
+                            android:textSize="10sp"
+                            android:textColor="#949494"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginRight="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_marginTop="18dp"
+                            android:background="@color/shenguiappcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:padding="3dp"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/activity_quanzi_confirm"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:id="@+id/giftText3"
+                            android:text="未知"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/giftTwoDay"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/giftText3"
+                            android:text="15天"
+                            android:gravity="center_horizontal"
+                            android:textSize="10sp"
+                            android:textColor="#949494"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginRight="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_marginTop="18dp"
+                            android:background="@color/shenguiappcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:padding="3dp"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/activity_quanzi_confirm"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:id="@+id/giftText2"
+                            android:text="未知"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/Day3"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/giftText2"
+                            android:text="30天"
+                            android:gravity="center_horizontal"
+                            android:textSize="10sp"
+                            android:textColor="#949494"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:background="#f1eff0"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/activity_main_tv_main_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d_40_px"
+                android:textSize="@dimen/d_42_px" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/activity_main_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d_40_px"
+                android:textColor="@color/hex_1b89cd"
+                android:textSize="@dimen/d_95_px" />
+
+            <LinearLayout
+                android:id="@+id/activity_main_ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginLeft="@dimen/d_43_px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/signimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:text="2016年"
+                    android:id="@+id/activity_main_tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+                <TextView
+                    android:text="12月"
+                    android:id="@+id/activity_main_tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:background="#f1eff0"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+
+            <com.shengui.app.android.shengui.android.ui.activity.activity.sign.SignView
+                android:id="@+id/activity_main_cv"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+            <View
+                android:background="#f1eff0"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+                <View
+                    android:id="@+id/views"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/shenguiappcolor"
+                    android:layout_width="2dp"
+                    android:layout_height="14dp"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/views"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="获奖名单"
+                    android:textSize="14sp"
+                    android:textColor="#2f2f2f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:background="#f1eff0"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:divider="@color/bottomlineColor"
+                android:dividerHeight="1sp"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:listSelector="@color/transparence"
+                android:layout_height="match_parent">
+            </com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView>
+        </LinearLayout>
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+
+</LinearLayout>

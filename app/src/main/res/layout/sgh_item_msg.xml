@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="8dp">
+
+        <com.shengui.app.android.shengui.android.ui.serviceui.weigh.CircleImageView
+            android:id="@+id/left_face"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:id="@+id/left_msg_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/left_face"
+            android:background="@mipmap/t_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left_msg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="啊實打實大蘇打按時大大大說愛上打掃打掃打掃的"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/left_msg_img"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/left_msg_video"
+            android:layout_width="192dp"
+            android:layout_height="108dp"
+            android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/left_voice_layout"
+                android:layout_width="125dp"
+                android:layout_marginRight="6dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+
+
+                <ImageView
+                    android:id="@+id/left_iv_voice_image"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_sound3_left"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:visibility="visible"
+                    />
+
+                <ImageView
+                    android:id="@+id/left_iv_voice_image_anim"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/left_chat_voice_send_anim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/left_tv_voice_len"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="222"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+        />
+
+        <com.shengui.app.android.shengui.android.ui.serviceui.weigh.CircleImageView
+            android:id="@+id/right_face"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:id="@+id/right_msg_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/right_face"
+            android:background="@mipmap/t_right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/right_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/right_question"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="追问："-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="14sp" />-->
+
+                <TextView
+                    android:id="@+id/right_msg_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="啊實打實大蘇打按時大大大說愛上打掃打掃打掃的"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/right_msg_img"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                android:id="@+id/right_msg_video"
+                android:layout_width="192dp"
+                android:layout_height="108dp"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/right_voice_layout"
+                android:layout_width="125dp"
+                android:layout_marginRight="6dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/right_tv_voice_len"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/right_iv_voice_image"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_sound3_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:visibility="visible"
+                    />
+
+                <ImageView
+                    android:id="@+id/right_iv_voice_image_anim"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/right_chat_voice_send_anim"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

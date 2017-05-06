@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+ <LinearLayout android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginBottom="@dimen/tenDp"
+               android:layout_marginTop="@dimen/tenDp"
+               android:background="@drawable/activity_quanzi_popdialog"
+               android:layout_height="wrap_content">
+
+  <TextView
+      android:id="@+id/zhidingText"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:layout_gravity="center_horizontal"
+      android:text="置顶"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="35dp" />
+  <View
+      android:id="@+id/linetop"
+      android:background="@color/bottomlineColor"
+      android:layout_width="match_parent"
+      android:layout_height="1sp"/>
+  <TextView
+      android:id="@+id/settingText"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:text="设为精华"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_width="match_parent"
+      android:layout_height="35dp" />
+  <View
+      android:id="@+id/linedig"
+      android:background="@color/bottomlineColor"
+      android:layout_width="match_parent"
+      android:layout_height="1sp"/>
+  <TextView
+      android:id="@+id/removeText"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:text="移动到"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_width="match_parent"
+      android:layout_height="35dp" />
+  <View
+      android:id="@+id/linemove"
+      android:background="@color/bottomlineColor"
+      android:layout_width="match_parent"
+      android:layout_height="1sp"/>
+
+  <TextView
+      android:id="@+id/removeDeleteText"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:text="移除"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_width="match_parent"
+      android:layout_height="35dp" />
+  <View
+      android:id="@+id/linedelete"
+      android:background="@color/bottomlineColor"
+      android:layout_width="match_parent"
+      android:layout_height="1sp"/>
+  <TextView
+      android:id="@+id/deleteText"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:text="删除"
+      android:gravity="center"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_centerHorizontal="true"
+      android:layout_width="match_parent"
+      android:layout_gravity="center_horizontal"
+      android:layout_height="35dp" />
+  <View
+      android:id="@+id/linecollect"
+      android:background="@color/bottomlineColor"
+      android:layout_width="match_parent"
+      android:layout_height="1sp"/>
+
+
+
+  <TextView
+      android:id="@+id/collectionText"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:text="收藏"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_height="35dp" />
+  <View
+      android:background="@color/bottomlineColor"
+      android:layout_width="match_parent"
+      android:layout_height="1sp"/>
+  <TextView
+      android:id="@+id/sharwTextView"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:text="分享"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_width="match_parent"
+      android:layout_height="35dp" />
+  <View
+      android:background="@color/bottomlineColor"
+      android:layout_width="match_parent"
+      android:layout_height="1sp"/>
+  <TextView
+      android:id="@+id/jubaoText"
+      android:background="@color/white"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:text="举报"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="35dp" />
+
+
+ </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tenDp"/>
+    <TextView
+        android:background="@drawable/activity_quanzi_popdialog"
+        android:id="@+id/cancelTextView"
+        android:layout_marginBottom="@dimen/tenDp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="取消"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+</LinearLayout>

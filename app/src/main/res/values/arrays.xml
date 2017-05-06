@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_emo_phrase">
+        <item>[呵呵]</item>
+        <item>[嘻嘻]</item>
+        <item>[哈哈]</item>
+        <item>[晕]</item>
+        <item>[泪]</item>
+        <item>[馋嘴]</item>
+        <item>[抓狂]</item>
+        <item>[哼]</item>
+        <item>[可爱]</item>
+        <item>[怒]</item>
+        <item>[困]</item>
+        <item>[汗]</item>
+        <item>[睡觉]</item>
+        <item>[偷笑]</item>
+        <item>[酷]</item>
+        <item>[吃惊]</item>
+        <item>[闭嘴]</item>
+        <item>[花心]</item>
+        <item>[失望]</item>
+        <item>[生病]</item>
+        <item>[亲亲]</item>
+        <item>[右哼哼]</item>
+        <item>[嘘]</item>
+        <item>[挤眼]</item>
+        <item>[酷]</item>
+        <item>[感冒]</item>
+        <item>[做鬼脸]</item>
+        <item>[阴险]</item>
+        <item>[热吻]</item>
+        <item>[心]</item>
+        <item>[ok]</item>
+        <item>[不要]</item>
+        <item>[弱]</item>
+        <item>[good]</item>
+        <item>[拳头]</item>
+        <item>[耶]</item>
+        <item>[0]</item>
+        <item>[1]</item>
+        <item>[2]</item>
+        <item>[3]</item>
+        <item>[4]</item>
+        <item>[5]</item>
+        <item>[6]</item>
+        <item>[7]</item>
+        <item>[8]</item>
+        <item>[9]</item>
+    </string-array>
+    <string-array name="mine_tab">
+        <item>热门</item>
+        <item>组织</item>
+        <item>全部</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="mine_search">
+        <item>圈子</item>
+        <item>龟蜜</item>
+        <item>帖子</item>
+    </string-array>
+    <string-array name="mine_detail">
+        <item>全部</item>
+        <item>精华</item>
+        <item>龟池指导</item>
+        <item>孵化</item>
+        <item>公母鉴别</item>
+    </string-array>
+    <string-array name="mine_base">
+        <item>资料</item>
+        <item>成员</item>
+    </string-array>
+    <string-array name="mine_info">
+        <item>TA的供求</item>
+        <item>TA的动态</item>
+    </string-array>
+    <string-array name="mine_select">
+    <item>最新</item>
+    <item>附近</item>
+    <item>关注</item>
+</string-array>
+    <string-array name="mine_guimi_lsd">
+        <item>关注</item>
+        <item>热门</item>
+        <item>最新</item>
+    </string-array>
+    <string-array name="mine_guimi">
+        <item>龟蜜</item>
+        <item>粉丝</item>
+    </string-array>
+</resources>

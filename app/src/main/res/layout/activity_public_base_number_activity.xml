@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+    <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:textColor="#333333"
+                android:background="#e0e0e0"
+                android:paddingLeft="@dimen/tenDp"
+                android:gravity="center_vertical"
+                android:text="待审核成员 （4人）"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/confirmlistview"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="#f2f0f1"
+                android:dividerHeight="1sp"
+                android:focusable="false"
+                android:listSelector="@color/transparence"
+                android:overScrollMode="never"/>
+            <TextView
+                android:textColor="#333333"
+                android:background="#e0e0e0"
+                android:paddingLeft="@dimen/tenDp"
+                android:gravity="center_vertical"
+                android:text="成员列表 （100人）"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollListView
+                android:id="@+id/Memberlistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="#f2f0f1"
+                android:dividerHeight="1sp"
+                android:focusable="false"
+                android:listSelector="@color/transparence"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+
+    </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+
+
+</RelativeLayout>

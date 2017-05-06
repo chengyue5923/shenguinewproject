@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f1f1"
+    android:id="@+id/rootlayout"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/cancelTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="取消"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:textColor="#2a2a2a"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:text="提问"
+                    android:textColor="#2a2a2a"
+                    android:textSize="17sp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/pushTextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="发表"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:textColor="@color/shenguiappcolor"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/bottomlineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="问题和意见"
+                    android:textColor="#707070" />
+
+                <com.shengui.app.android.shengui.android.ui.utilsview.EditTextMultiLine
+                    android:id="@+id/titleEt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+
+                    android:hint="详细描述一下龟龟的状况！"
+                    android:inputType="textMultiLine"
+                    android:maxLength="140"
+                    android:minLines="4"
+                    app:multi_label="标题" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="添加照片"
+                            android:textColor="#939393"
+                            android:textSize="16sp" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/imageCount"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="0/9"-->
+                        <!--android:textColor="#46464b"-->
+                        <!--android:textSize="16sp" />-->
+
+                    </RelativeLayout>
+
+                    <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollGridView
+                        android:id="@+id/mGridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="3"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/addressTv"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/quanzi_address_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/shenguiappcolor"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/imageCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0/9张"
+                            android:textColor="#9b9b9b"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="#f2f1f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bottomlineColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+                <RelativeLayout
+                    android:id="@+id/quanzilayout"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:text="选择圈子"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/list_tappable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+                <!--<View-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/bottomlineColor"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1sp"/>-->
+                <!--<RelativeLayout-->
+                    <!--android:background="@color/white"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="44dp">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/facebookibre"-->
+                        <!--android:layout_marginLeft="@dimen/tenDp"-->
+                        <!--android:background="@drawable/quanzi_face_view"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<TextView-->
+                        <!--android:layout_toRightOf="@id/facebookibre"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="@dimen/tenDp"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:textColor="@color/shenguiappcolor"-->
+                        <!--android:text="#话题#"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<ImageView-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_marginRight="@dimen/tenDp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@drawable/list_tappable"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+
+                <!--</RelativeLayout>-->
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bottomlineColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:paddingLeft="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="联系电话"
+                        android:textColor="#46464b"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="选填，便于我们与您联系"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColorHint="#A9A9AD"
+                        android:textSize="16sp"
+                        android:id="@+id/editText" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/headlayout"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <View
+            android:layout_alignParentTop="true"
+            android:background="@color/bottomlineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+        <ImageView
+            android:id="@+id/facebookibre"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:background="@drawable/quanzi_face_view"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/topicTv"
+            android:layout_toRightOf="@id/facebookibre"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:textSize="15sp"
+            android:textColor="@color/shenguiappcolor"
+            android:text="#话题#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_tappable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

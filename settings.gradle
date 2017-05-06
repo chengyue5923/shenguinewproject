@@ -1,0 +1,1 @@
+include ':app', ':baseframwork', ':baseplatform', ':baseview', ':jcvideoplayer-lib'

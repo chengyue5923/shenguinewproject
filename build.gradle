@@ -1,0 +1,56 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.0.0'
+
+        //y以下两个数据统计以来
+     //   classpath 'com.android.tools.build:gradle:1.5.0'
+//        classpath 'com.growingio.android:vds-gradle-plugin:0.9.103'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+ext {
+    //SDK相关参数
+    compileSdkVersion = 23
+    buildToolsVersion = "23.0.1"
+    minSdkVersion = 15
+    targetSdkVersion = 22
+    //APP版本相关参数
+    versionCode = 221
+    versionName = "2.2.1"
+
+    gradleFilePath = "gui_android.jks"
+    storePassword = "guikdmobi"
+    keyAlias = "kdmobi"
+    keyPassword = "guikdmobi"
+
+
+//    //生产
+//    ONLINE_APP_URL = '"http://gui.ideathink.com.cn/"'
+//    ONLINE_PIC_URL = '"http://gui.ideathink.com.cn/"'
+//    DEBUG_APP_URL = '"http://gui.ideathink.com.cn/"'
+//    DEBUG_PIC_URL = '"http://gui.ideathink.com.cn/"'
+
+    ONLINE_APP_URL = '"http://api.gui66.com"'
+    ONLINE_PIC_URL = '"http://api.gui66.com"'
+    DEBUG_APP_URL = '"http://api.gui66.com"'
+    DEBUG_PIC_URL = '"http://api.gui66.com"'
+
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}

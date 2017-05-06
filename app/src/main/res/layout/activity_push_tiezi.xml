@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="发布帖子"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/sureTextView"
+                android:layout_alignParentRight="true"
+                android:text="发表"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:textColor="@color/shenguiappcolor"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/cancelTextView"
+                android:layout_centerVertical="true"
+                android:text="取消"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/tenDp"
+                android:textColor="#2e2e2e"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+
+        android:layout_below="@id/toolbar"
+        android:background="@color/bottomlineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp">
+        <EditText
+            android:id="@+id/inputTextView"
+            android:maxLength="140"
+            android:textColorHint="#989898"
+            android:hint="亲，分享一下您和龟龟的趣事吧！"
+            android:textColor="#2a2a2a"
+            android:textSize="11sp"
+            android:gravity="top"
+            android:text=""
+            android:padding="@dimen/tenDp"
+            android:layout_width="match_parent"
+            android:layout_height="112dp" />
+        <TextView
+            android:text="140字"
+            android:layout_marginBottom="@dimen/tenDp"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#f2f1f1"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加照片"
+                android:textColor="#46464b"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <com.shengui.app.android.shengui.android.ui.utilsview.NoScrollGridView
+            android:id="@+id/mGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#46464b"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/imageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0/9"
+                android:textColor="#46464b"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

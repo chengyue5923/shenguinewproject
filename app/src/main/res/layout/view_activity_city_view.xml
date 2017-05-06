@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+              <TextView
+                  android:id="@+id/itemTextivew"
+                  android:background="@drawable/activity_border_text"
+                  android:text="中山市"
+                  android:textSize="15sp"
+                  android:textColor="#333333"
+                  android:gravity="center"
+                  android:layout_centerVertical="true"
+                  android:layout_width="100dp"
+                  android:layout_height="45dp"
+                  android:minHeight="30dp"/>
+            <ImageView
+                android:id="@+id/deleteIm"
+                android:layout_marginLeft="-10dp"
+                android:layout_toRightOf="@+id/itemTextivew"
+                android:background="@drawable/delete_image"
+                android:layout_width="@dimen/tenDp"
+                android:layout_height="@dimen/tenDp" />
+
+</RelativeLayout>

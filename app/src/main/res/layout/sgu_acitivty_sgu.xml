@@ -1,0 +1,215 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:statusBarScrim="@null">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbatlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:collapsedTitleGravity="center"
+                app:contentScrim="@color/white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@null">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/sgu_include_header" />
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/rlhs"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="204dp">-->
+
+                        <!--<android.support.v4.view.ViewPager-->
+                            <!--android:id="@+id/homepage_viewpage"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentTop="true" />-->
+
+                        <!--<RadioGroup-->
+                            <!--android:id="@+id/rgSGU"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentBottom="true"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/sgu_top_rb1"-->
+                                <!--android:layout_width="7dp"-->
+                                <!--android:layout_height="7dp"-->
+                                <!--android:background="@drawable/sleckt_main"-->
+                                <!--android:button="@null"-->
+                                <!--android:checked="true" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/sgu_top_rb2"-->
+                                <!--android:layout_width="7dp"-->
+                                <!--android:layout_height="7dp"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:background="@drawable/sleckt_main"-->
+                                <!--android:button="@null" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/sgu_top_rb3"-->
+                                <!--android:layout_width="7dp"-->
+                                <!--android:layout_height="7dp"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:background="@drawable/sleckt_main"-->
+                                <!--android:button="@null" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/sgu_top_rb4"-->
+                                <!--android:layout_width="7dp"-->
+                                <!--android:layout_height="7dp"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:background="@drawable/sleckt_main"-->
+                                <!--android:button="@null" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/sgu_top_rb5"-->
+                                <!--android:layout_width="7dp"-->
+                                <!--android:layout_height="7dp"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:background="@drawable/sleckt_main"-->
+                                <!--android:button="@null" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/sgu_top_rb6"-->
+                                <!--android:layout_width="7dp"-->
+                                <!--android:layout_height="7dp"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:background="@drawable/sleckt_main"-->
+                                <!--android:button="@null" />-->
+                        <!--</RadioGroup>-->
+
+                    <!--</RelativeLayout>-->
+                    <com.shengui.app.android.shengui.android.ui.utilsview.BannerView
+                        android:id="@+id/sgu_bannerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/all_about_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/main_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="0.10"
+                                android:text="推荐视频"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/all_video_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="23dp"
+                                android:layout_margin="5dp"
+                                android:text="全部"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/right" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scrollbars="none">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:background="@color/bottom_main" />
+                </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/include_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                app:tabIndicatorColor="@color/main_color"
+                app:tabIndicatorHeight="2dp"
+                app:tabSelectedTextColor="@color/main_color"
+                app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/header_font_color" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/include_vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+

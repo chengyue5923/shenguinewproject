@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f0f1"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:text="个人资料"
+                    android:textColor="#2a2a2a"
+                    android:textSize="17sp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/statesText"
+                    android:textSize="14sp"
+                    android:text="保存"
+                    android:textColor="@color/shenguiappcolor"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <ImageView
+                    android:id="@+id/cancelTextView"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/back_default"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:id="@+id/scrollView"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <View
+                    android:background="#e6e6e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/infoImageLayout"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp">
+                    <TextView
+                        android:id="@+id/infoBack"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:textColor="#2e2e2e"
+                        android:layout_centerVertical="true"
+                        android:text="头像："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.shengui.app.android.shengui.android.ui.utilsview.CircleImageView
+                        android:id="@+id/personInfoIv"
+                        android:layout_width="42dp"
+                        android:layout_toRightOf="@id/infoBack"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="42dp"
+                        android:src="@drawable/customer_bg_view"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:id="@+id/getImage"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#9f9f9f"
+                        android:textSize="13sp"
+                        android:text="点击编辑"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+                <View
+                    android:background="#e6e6e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/infoLayout"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:textColor="#2e2e2e"
+                        android:layout_centerVertical="true"
+                        android:text="昵称："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                  <EditText
+                      android:id="@+id/nameEt"
+                      android:textColor="#2e2e2e"
+                      android:textColorHint="#2e2e2e"
+                      android:maxLength="20"
+                      android:layout_toRightOf="@id/nameTv"
+                      android:layout_centerVertical="true"
+                      android:background="@null"
+                      android:hint=""
+                      android:textSize="15sp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/changeName"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#9f9f9f"
+                        android:textSize="13sp"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_centerVertical="true"
+                        android:text="点击修改"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:background="#e6e6e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+                <RelativeLayout
+                    android:id="@+id/infonmkeLayout"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:id="@+id/nikiTv"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:textColor="#2e2e2e"
+                        android:layout_centerVertical="true"
+                        android:text="名字："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/nikiEt"
+                        android:textColor="#2e2e2e"
+                        android:textColorHint="#2e2e2e"
+                        android:layout_toRightOf="@id/nikiTv"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="10"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/changeNiki"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#9f9f9f"
+                        android:textSize="13sp"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_centerVertical="true"
+                        android:text="点击修改"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:background="#e6e6e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/sexLayout"
+                    android:background="@drawable/lay_my_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:id="@+id/sexTv"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:textColor="#2e2e2e"
+                        android:layout_centerVertical="true"
+                        android:text="性别："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/sexEt"
+                        android:textColor="#2e2e2e"
+                        android:textColorHint="#2e2e2e"
+                        android:layout_toRightOf="@id/sexTv"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="男"
+                        android:textSize="15sp"
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/changeSex"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#9f9f9f"
+                        android:textSize="13sp"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_centerVertical="true"
+                        android:text="点击选择"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:background="#e6e6e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+                <RelativeLayout
+                    android:id="@+id/addressLayout"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:id="@+id/addressTv"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:textColor="#2e2e2e"
+                        android:layout_centerVertical="true"
+                        android:text="城市："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/addressEt"
+                        android:textColor="#2e2e2e"
+                        android:textColorHint="#2e2e2e"
+                        android:layout_toRightOf="@id/addressTv"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="佛山市"
+                        android:textSize="15sp"
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#9f9f9f"
+                        android:textSize="13sp"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_centerVertical="true"
+                        android:text="点击修改"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:background="#e6e6e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+                <RelativeLayout
+                    android:id="@+id/signLayout"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="@dimen/tenDp"
+                        android:id="@+id/signTv"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:textColor="#2e2e2e"
+                        android:text="个性签名："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:gravity="top"
+                        android:maxLength="26"
+                        android:text="昵称"
+                        android:layout_marginTop="@dimen/tenDp"
+                        android:id="@+id/signEt"
+                        android:textColor="#2e2e2e"
+                        android:textColorHint="#2e2e2e"
+                        android:layout_toRightOf="@id/signTv"
+                        android:background="@null"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:lines="5"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/signNumber"
+                        android:layout_below="@id/signEt"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#9f9f9f"
+                        android:textSize="13sp"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:layout_centerVertical="true"
+                        android:text="最多输入26字"
+                        android:layout_marginBottom="@dimen/tenDp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:background="#e6e6e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"/>
+            </LinearLayout>
+
+
+
+        </com.shengui.app.android.shengui.android.ui.utilsview.ScrollViewExtend>
+    </LinearLayout>
+</RelativeLayout>

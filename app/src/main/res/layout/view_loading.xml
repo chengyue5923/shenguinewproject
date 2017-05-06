@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/imageViewLoading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewLoading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="正在加载，请稍后"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:textColor="@color/shenguiappcolor"
+            android:textSize="@dimen/view_empty_v2_text_size" />
+    </RelativeLayout>
+
+
+</LinearLayout>

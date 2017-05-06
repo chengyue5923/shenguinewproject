@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f0f1"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:text="更改手机号"
+                    android:textColor="#2a2a2a"
+                    android:textSize="17sp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/statesText"
+                    android:textSize="14sp"
+                    android:text="发送"
+                    android:textColor="@color/shenguiappcolor"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:textSize="14sp"
+                    android:text="取消"
+                    android:textColor="#2a2a2a"
+                    android:id="@+id/cancelTextView"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:background="#f2f0f1"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/phoneTv"
+                    android:textColor="#343434"
+                    android:textSize="11sp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="14dp"
+                    android:text="您的手机号： 13612345678"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <EditText
+                    android:id="@+id/inoutnumberTv"
+                    android:textSize="11sp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#9d9d9d"
+                    android:hint="请填写手机号码"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:background="@drawable/activity_plate_code_item"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent" />
+                <com.shengui.app.android.shengui.android.ui.utilsview.CountDownTimeButton
+                    android:background="@drawable/activity_detail_phone_bg"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/sentCodeText"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:text="发送验证码"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/inputCodeTv"
+                android:layout_marginTop="15dp"
+                android:textSize="11sp"
+                android:paddingLeft="7dp"
+                android:textColor="#333333"
+                android:textColorHint="#9d9d9d"
+                android:hint="请输入验证码"
+                android:maxLength="6"
+                android:inputType="number"
+                android:background="@drawable/activity_plate_code_item"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/conformTv"
+                android:text="提交"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/activity_quanzi_confirm"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <RelativeLayout
+                android:layout_marginBottom="95dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/image"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/agreementTv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/image"
+                    android:text="同意用户协议"
+                    android:textSize="12sp"
+                    android:textColor="#343434"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

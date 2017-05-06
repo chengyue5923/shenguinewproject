@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 页面动画效果切换时间 -->
+    <integer name="translate_anim_interval">300</integer>
+</resources>
